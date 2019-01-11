@@ -1,0 +1,84 @@
+
+@font-face {
+	font-family: "raleway-regular";
+	src: url("../fonts/raleway-regular.woff2") format("woff2");
+	src: url("../fonts/raleway-regular.woff") format("woff");
+	src: url("../fonts/raleway-regular.ttf") format("truetype");
+}
+/*@font-face {
+	font-family: "raleway-medium";
+	src: url("../fonts/raleway-medium.woff2") format("woff2");
+	src: url("../fonts/raleway-medium.woff") format("woff");
+	src: url("../fonts/raleway-medium.ttf") format("truetype");
+}*/
+
+/*--------Colors------------
+Black		#181818		rgb(24, 24, 24)
+White		#FCFCFC		rgb(252, 252, 252)
+Yellow 		#FFCB0D		rgb(255, 203, 13)
+Blue		#04ABCC		rgb(4, 171, 204)
+Brown/red	#820900		rgb(130, 9, 0)
+*/
+
+
+/* GLOBAL
+-----------------------------*/
+main, article, header, nav, section, aside, footer {
+	display: block;
+}
+
+body {
+	
+}
+
+.flexbox {
+	display: flex;
+	flex-flow: wrap;
+}
+
+/* FONT DECLARATIONS 
+-------------------------------*/
+
+body {
+	font-family: "raleway-regular", helvetica, sans-serif;
+}
+
+
+/* HEADER AND NAVIGATION
+-------------------------------*/
+
+
+/* CTA AREA
+(home page)
+-------------------------------*/
+
+
+
+
+/*DESKTOP STYLES
+----------------------------------------*/
+@media screen and (min-width: 801px) {
+	
+}
+
+/*TABLET STYLES
+----------------------------------------*/
+@media screen and (min-width: 481px) and (max-width: 800px) {
+	
+}
+
+/*MOBILE STYLES
+----------------------------------------*/
+@media screen and (max-width: 480px) {
+
+	/*article#pop-tours section,
+	article#discover,
+	article#reviews,
+	aside#social {
+		min-width: 90%;
+	}*/
+
+	
+
+	
+}
