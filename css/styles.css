@@ -27,11 +27,7 @@ Grey		#A19892		rgb(161, 152, 146)
 Green		#678585		rgb(103, 133, 21)
 */
 
-:root {
-	--black: #000;
-	--white: #FFFEEC;
-	--blue: #166187;
-}
+
 
 /*Test stage*/
 
@@ -45,13 +41,13 @@ main, article, header, nav, section, aside, footer {
 
 body {
 	margin: 0;
-	background-color: var(--black);
+	background-color: #000;
 	/*background-color: white;*/
 }
 
 a {
 	text-decoration: none;
-	color: var(--white);
+	color: #FFFEEC;
 	display: block;
 	/*border: 1px dotted yellow;*/
 }
@@ -78,7 +74,7 @@ h1, nav ul {
 
 #page-header {
 	position: relative;
-	background-color: var(--blue);
+	background-color: #166187;
 	width: 100%;
 	height: 150px;
 	/*border: 1px dotted White;*/
@@ -106,7 +102,7 @@ header #logo {
 	/*border: 1px solid White;*/
 	width: 180px;
 	height: 150px;
-	background-color: var(--black);
+	background-color: #000;
 	/*margin-top: -19px;*/
 	float: right;
 }
@@ -118,7 +114,7 @@ header #logo {
 	position: absolute;
 	top: 0;
 	right: 180px;
-	border-bottom: 150px solid var(--black);
+	border-bottom: 150px solid #000;
 	border-left: 150px solid transparent;
 	
 }
@@ -128,7 +124,7 @@ header nav ul {
 	padding-left: 0;
 	margin: 0;
 	list-style-type: none;
-	color: var(--white);
+	color: #FFFEEC;
 	text-align: center;
 }
 
@@ -157,7 +153,7 @@ nav ul li:last-child {
 	height: 25px;
 	position: relative;
 	border: 1px solid transparent;
-	border-bottom: 1px solid var(--white);
+	border-bottom: 1px solid #FFFEEC;
 
 }
 
@@ -189,23 +185,23 @@ nav ul li:last-child {
 	height: 0;
 	top: -1px;
 	right: -25px;
-	border-top: 25px solid var(--blue);
+	border-top: 25px solid #166187;
 	border-right: 25px solid transparent;
 }
 
 
 .btn-border:hover {
-	border: 1px solid var(--white);
+	border: 1px solid #FFFEEC;
 }
 .btn-border:hover::after {
-	border-top-color: var(--white);
+	border-top-color: #FFFEEC;
 }
 .btn:active {
-	background-color: var(--white);
-	color: var(--black);
+	background-color: #FFFEEC;
+	color: #000;
 }
 .btn:active::after {
-	border-top-color: var(--white);
+	border-top-color: #FFFEEC;
 }
 
 /* CTA AREA
