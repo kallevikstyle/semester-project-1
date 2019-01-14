@@ -48,7 +48,7 @@ body {
 a {
 	text-decoration: none;
 	color: #FFFEEC;
-	display: block;
+	/*display: block;*/
 	/*border: 1px dotted yellow;*/
 }
 
@@ -64,7 +64,7 @@ body {
 	font-family: "raleway-regular", helvetica, sans-serif;
 }
 
-h1, nav ul {
+h1, nav ul, a {
 	font-family: "happymonkey-regular", arial, sans-serif;
 }
 
@@ -121,6 +121,12 @@ header #logo {
 }
 /* Navigation */
 
+nav ul {
+	padding-left: 0;
+	list-style-type: none;
+	color: #FFFEEC;
+}
+
 #main-navigation {
 	margin-top: 10px;
 	display: inline-block;
@@ -130,13 +136,11 @@ header #logo {
 	width: 210px;
 }
 
-header nav ul {
+#main-navigation ul {
 	position: relative;
 	z-index: 3;			/*Makes sure the UL is stacked on top of the next div*/
-	padding-left: 0;
 	margin: 0;
-	list-style-type: none;
-	color: #FFFEEC;
+	font-size: 16px;
 	text-align: center;
 	/*border: 1px solid yellow;*/
 }
@@ -163,6 +167,33 @@ nav ul li:last-child {
 	left: 34px;
 }
 
+/* 'Get involved' and 'About us' nav */
+#right-hand-navigation {
+	/*border: 1px solid yellow;*/
+}
+
+#right-hand-navigation ul {
+	margin: 20px 0 0 20px;
+	/*margin-top: 20px;*/
+	font-size: 10px;
+}
+
+#right-hand-navigation ul li {
+	display: inline;
+}
+#right-hand-navigation ul li:first-child {
+	margin-right: 20px;
+}
+#right-hand-navigation ul li:first-child a {
+	color: #E3C91E;
+}
+
+#right-hand-navigation a:hover {
+	text-decoration: underline;
+}
+
+
+/* Menu buttons */
 .btn-border {	/* a container element for the menu buttons, which will act as the border on hover*/
 	height: 25px;
 	position: relative;
@@ -202,6 +233,31 @@ nav ul li:last-child {
 	border-right: 25px solid transparent;
 }
 
+#tickets-btn {
+	position: relative;
+	left: -40px;
+	display: inline-block;
+	margin-top: 45px;
+	padding: 10px 5px 5px 5px; 
+	width: 120px;
+	height: 25px;
+	background-color: #C91E90;
+	text-align: center;
+	color: #FFFEEC;
+	text-transform: uppercase;
+}
+#tickets-btn::after {
+	content: "";
+	width: 0;
+	height: 0;
+	position: absolute;
+	top: 0;
+	right: -40px;
+	border-bottom: 40px solid #C91E90;
+	border-right: 40px solid transparent;
+}
+
+/* Hover and active states */
 
 .btn-border:hover {
 	border: 1px solid #FFFEEC;
@@ -216,6 +272,15 @@ nav ul li:last-child {
 .btn:active::after {
 	border-top-color: #FFFEEC;
 }
+
+#tickets-btn:hover {
+	background-color: #E3C91E;
+	color: #000;
+}
+#tickets-btn:hover::after {
+	border-bottom-color: #E3C91E;
+}
+
 
 /* CTA AREA
 (home page)
