@@ -25,7 +25,7 @@ Pink		#C91E90		rgb(201, 30, 144)
 Yellow		#E3C91E		rgb(227, 201, 30)
 Grey		#A19892		rgb(161, 152, 146)
 Green		#678585		rgb(103, 133, 21)
-*/
+------------------------------*/
 
 
 
@@ -87,7 +87,6 @@ h1, nav ul {
 
 header #logo {
 	/*border: 1px solid yellow;*/
-	float: left;
 	width: 220px;
 	height: 150px;
 	background-image: url("../images/logo/logo.png");
@@ -98,13 +97,15 @@ header #logo {
 
 }
 
-#page-header-right {
-	/*border: 1px solid White;*/
+#page-header-right {	/*The black top right section of header*/
+	display: inline-block;
+	position: absolute;
+	top: 0;
+	right: 0;
 	width: 180px;
 	height: 150px;
 	background-color: #000;
-	/*margin-top: -19px;*/
-	float: right;
+	/*border: 1px dotted pink;*/
 }
 
 #page-header-right::before { /*Using border to create a black triangle before the div*/
@@ -120,36 +121,49 @@ header #logo {
 }
 /* Navigation */
 
+#main-navigation {
+	margin-top: 10px;
+	display: inline-block;
+	position: absolute;
+	top: 0;
+	right: 250px;
+	width: 210px;
+}
+
 header nav ul {
+	position: relative;
+	z-index: 3;			/*Makes sure the UL is stacked on top of the next div*/
 	padding-left: 0;
 	margin: 0;
 	list-style-type: none;
 	color: #FFFEEC;
 	text-align: center;
+	/*border: 1px solid yellow;*/
 }
 
 nav ul li {
-	border: 1px dotted pink;
-	/*height: 30px;*/
+	/*border: 1px dotted pink;*/
 	position: relative;
 	width: 120px;
 	margin-bottom: 5px;
-	left: 50px; /*Skew them here*/
 }
+
 nav ul li:last-child {
 	margin-bottom: 0;
 }
 
-#main-navigation {
-	margin-top: 10px;
-	position: absolute;
-	display: inline-block;
-	right: 330px;
-	/*border: 1px solid yellow;*/
+/* Pushing the menu buttons towards the right */
+#main-navigation ul li:first-child {
+	left: 102px;
+}
+#main-navigation ul li:nth-child(2) {
+	left: 68px;
+}
+#main-navigation ul li:nth-child(3) {
+	left: 34px;
 }
 
-
-.btn-border {	/* a container element for the menu buttons, which will be the border on hover*/
+.btn-border {	/* a container element for the menu buttons, which will act as the border on hover*/
 	height: 25px;
 	position: relative;
 	border: 1px solid transparent;
@@ -173,7 +187,6 @@ nav ul li:last-child {
 	border: 1px solid transparent;
   	position: relative;
   	padding-top: 1px;
-  	/*width: 100px;*/
   	height: 23px;
   }
 
