@@ -1,4 +1,9 @@
-
+@font-face {
+	font-family: "happymonkey-regular";
+	src: url("../fonts/happymonkey-regular.woff2") format("woff2");
+	src: url("../fonts/happymonkey-regular.woff") format("woff");
+	src: url("../fonts/happymonkey-regular.ttf") format("truetype");
+}
 @font-face {
 	font-family: "raleway-regular";
 	src: url("../fonts/raleway-regular.woff2") format("woff2");
@@ -24,6 +29,7 @@ Green		#678585		rgb(103, 133, 21)
 
 :root {
 	--black: #000;
+	--white: #FFFEEC;
 	--blue: #166187;
 }
 
@@ -40,6 +46,14 @@ main, article, header, nav, section, aside, footer {
 body {
 	margin: 0;
 	background-color: var(--black);
+	/*background-color: white;*/
+}
+
+a {
+	text-decoration: none;
+	color: var(--white);
+	display: block;
+	/*border: 1px dotted yellow;*/
 }
 
 .flexbox {
@@ -54,24 +68,144 @@ body {
 	font-family: "raleway-regular", helvetica, sans-serif;
 }
 
+h1, nav ul {
+	font-family: "happymonkey-regular", arial, sans-serif;
+}
+
 
 /* HEADER AND NAVIGATION
 -------------------------------------------------------------------------------*/
-header {
+
+#page-header {
+	position: relative;
 	background-color: var(--blue);
 	width: 100%;
 	height: 150px;
-	
+	/*border: 1px dotted White;*/
+}
+
+#page-header h1 {
+	position: absolute;
+	left: -9000px;		/*Hide headline from screen*/
 }
 
 header #logo {
-	/*border: 1px solid black;*/
+	/*border: 1px solid yellow;*/
+	float: left;
 	width: 220px;
-	height: 133px;
+	height: 150px;
 	background-image: url("../images/logo/logo.png");
 	background-repeat: no-repeat;
 	background-size: contain;
+	background-position: center;
+	margin-left: 10px;
 
+}
+
+#page-header-right {
+	/*border: 1px solid White;*/
+	width: 180px;
+	height: 150px;
+	background-color: var(--black);
+	/*margin-top: -19px;*/
+	float: right;
+}
+
+#page-header-right::before { /*Using border to create a black triangle before the div*/
+	content: "";
+	width: 0;
+	height: 0;
+	position: absolute;
+	top: 0;
+	right: 180px;
+	border-bottom: 150px solid var(--black);
+	border-left: 150px solid transparent;
+	
+}
+/* Navigation */
+
+header nav ul {
+	padding-left: 0;
+	margin: 0;
+	list-style-type: none;
+	color: var(--white);
+	text-align: center;
+}
+
+nav ul li {
+	border: 1px dotted pink;
+	/*height: 30px;*/
+	position: relative;
+	width: 120px;
+	margin-bottom: 5px;
+	left: 50px; /*Skew them here*/
+}
+nav ul li:last-child {
+	margin-bottom: 0;
+}
+
+#main-navigation {
+	margin-top: 10px;
+	position: absolute;
+	display: inline-block;
+	right: 330px;
+	/*border: 1px solid yellow;*/
+}
+
+
+.btn-border {	/* a container element for the menu buttons, which will be the border on hover*/
+	height: 25px;
+	position: relative;
+	border: 1px solid transparent;
+	border-bottom: 1px solid var(--white);
+
+}
+
+.btn-border::after {	/* creates a triangle shape after the button container*/
+	content: "";
+	z-index: 1;
+	position: absolute;
+	width: 0;
+	height: 0;
+	top: -1px;
+	right: -27px;
+	border-top: 26px solid transparent;
+	border-right: 26px solid transparent;
+}
+
+.btn {
+	border: 1px solid transparent;
+  	position: relative;
+  	padding-top: 1px;
+  	/*width: 100px;*/
+  	height: 23px;
+  }
+
+.btn::after {	/*creates a triangle shape after the button, which will hide the shape of the container*/
+	content: "";
+	z-index: 2;
+	position: absolute;
+	width: 0;
+	height: 0;
+	top: -1px;
+	right: -25px;
+	border-top: 25px solid var(--blue);
+	border-right: 25px solid transparent;
+}
+
+
+.btn-border:hover {
+	border: 1px solid var(--white);
+}
+.btn-border:hover::after {
+	border-top-color: var(--white);
+}
+.btn:active {
+	background-color: var(--white);
+	color: var(--black);
+}
+.btn:active::after {
+	border-top-color: var(--white);
 }
 
 /* CTA AREA
