@@ -232,7 +232,9 @@ nav ul li:last-child {
 	border-top: 25px solid #166187;
 	border-right: 25px solid transparent;
 }
-
+#page-header-right a {
+	position: relative;
+}
 #tickets-btn {
 	position: relative;
 	left: -40px;
