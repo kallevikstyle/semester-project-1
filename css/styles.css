@@ -13,12 +13,25 @@
 }*/
 
 /*--------Colors------------
-Black		#181818		rgb(24, 24, 24)
-White		#FCFCFC		rgb(252, 252, 252)
-Yellow 		#FFCB0D		rgb(255, 203, 13)
-Blue		#04ABCC		rgb(4, 171, 204)
-Brown/red	#820900		rgb(130, 9, 0)
+Black		#000		rgb(0, 0, 0)
+White		#FFFEEC		rgb(255, 254, 236)
+Blue 		#166187		rgb(22, 97, 135)
+Pink		#C91E90		rgb(201, 30, 144)
+Yellow		#E3C91E		rgb(227, 201, 30)
+Grey		#A19892		rgb(161, 152, 146)
+Green		#678585		rgb(103, 133, 21)
 */
+
+:root {
+	--blue: #166187;
+}
+
+/*Test stage*/
+header {
+	background-color: var(--blue);
+	width: 100%;
+	height: 150px;
+}
 
 
 /* GLOBAL
