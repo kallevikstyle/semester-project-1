@@ -50,6 +50,12 @@ body {
 	margin: 0;
 	/*background-color: white;*/
 }
+
+#page-container {
+	margin: 0 auto;
+	max-width: 1200px;
+}
+
 p {
 
 }
@@ -384,6 +390,48 @@ footer li a {
 footer li a:hover {
 	text-decoration: underline;
 }
+
+#social-links ul {
+	margin-top: 50px;
+}
+#social-links li {
+	margin: 0;
+	/*border: 1px dotted red;*/
+}
+#social-links li div:last-child {
+	position: relative;
+	width: 138.564px;
+	height: 122px;
+	background-repeat: no-repeat;
+	border: 1px dotted yellow;
+}
+
+/* Triangular social buttons */
+
+#social-btn-mail {
+	background-image: url("../images/icons/social_mail.png");
+	left: 151px;	
+}
+#social-btn-facebook {
+	background-image: url("../images/icons/social_facebook.png");
+	left: 75px;
+}
+#social-btn-instagram {
+	background-image: url("../images/icons/social_instagram.png");	
+}
+#social-btn-linkedin {
+	background-image: url("../images/icons/social_linkedin.png");
+	right: 75px;	
+}
+#social-btn-twitter {
+	background-image: url("../images/icons/social_twitter.png");
+	right: 151px;		
+}
+
+#social-btn-instagram:hover {
+	background-image: url("../images/icons/social_instagram_hover.png");	
+}
+
 
 #copyright {
 	text-align: center;
