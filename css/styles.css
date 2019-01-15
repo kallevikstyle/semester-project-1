@@ -30,8 +30,7 @@ Green		#678585		rgb(103, 133, 21)
 /*
 TO DO:
 
-- Body width 100%
-- Make page container max-width 1000px ++
+- Make flexbox in footer
 
 */
 
@@ -393,48 +392,79 @@ footer li a:hover {
 
 #social-links ul {
 	margin-top: 50px;
+	display: inline-block;
+	/*border: 1px dotted red;*/
 }
 #social-links li {
 	margin: 0;
-	/*border: 1px dotted red;*/
+	
 }
 #social-links li div:last-child {
-	position: relative;
-	width: 138.564px;
-	height: 122px;
+	/*position: relative;*/
+	width: 100px;
+	height: 90px;
 	background-repeat: no-repeat;
-	border: 1px dotted yellow;
+	background-size: contain;
+	/*border: 1px dotted yellow;*/
 }
 
 /* Triangular social buttons */
 
 #social-btn-mail {
 	background-image: url("../images/icons/social_mail.png");
-	left: 151px;	
 }
 #social-btn-facebook {
 	background-image: url("../images/icons/social_facebook.png");
-	left: 75px;
 }
 #social-btn-instagram {
 	background-image: url("../images/icons/social_instagram.png");	
 }
 #social-btn-linkedin {
 	background-image: url("../images/icons/social_linkedin.png");
-	right: 75px;	
 }
 #social-btn-twitter {
 	background-image: url("../images/icons/social_twitter.png");
-	right: 151px;		
 }
 
+#social-btn-mail:hover {
+	background-image: url("../images/icons/social_mail_hover.png");	
+}
+#social-btn-facebook:hover {
+	background-image: url("../images/icons/social_facebook_hover.png");	
+}
 #social-btn-instagram:hover {
 	background-image: url("../images/icons/social_instagram_hover.png");	
 }
+#social-btn-linkedin:hover {
+	background-image: url("../images/icons/social_linkedin_hover.png");	
+}
+#social-btn-twitter:hover {
+	background-image: url("../images/icons/social_twitter_hover.png");	
+}
 
+#social-btn-mail:active {
+	background-image: url("../images/icons/social_mail_active.png");	
+}
+#social-btn-facebook:active {
+	background-image: url("../images/icons/social_facebook_active.png");	
+}
+#social-btn-instagram:active {
+	background-image: url("../images/icons/social_instagram_active.png");	
+}
+#social-btn-linkedin:active {
+	background-image: url("../images/icons/social_linkedin_active.png");	
+}
+#social-btn-twitter:active {
+	background-image: url("../images/icons/social_twitter_active.png");	
+}
 
+#contact-info {
+	/*display: inline-block;*/
+	/*border: 1px dotted green;*/
+}
 #copyright {
 	text-align: center;
+	
 	
 }
 #copyright p {
