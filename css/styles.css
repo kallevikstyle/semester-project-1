@@ -50,12 +50,26 @@ body {
 	margin: 0;
 	/*background-color: white;*/
 }
+p {
 
+}
+
+footer p {
+	font-size: 12px;
+}
 a {
 	text-decoration: none;
 	color: #FFFEEC;
 	display: block;
 	/*border: 1px dotted yellow;*/
+}
+
+header ul,
+footer ul {
+	padding-left: 0;
+	margin: 0;
+	list-style-type: none;
+	text-align: center;
 }
 
 .texture {
@@ -69,7 +83,7 @@ a {
 	flex-flow: wrap;
 }
 
-/* Arrow sections */
+/* Arrow shaped sections */
 
 .container-right-arrow-section {
 	width: 85%;
@@ -110,7 +124,7 @@ body {
 	font-family: "raleway-regular", helvetica, sans-serif;
 }
 
-h1, nav ul {
+h1, header ul, footer ul {
 	font-family: "happymonkey-regular", arial, sans-serif;
 }
 
@@ -179,11 +193,7 @@ header #logo {
 header nav ul {
 	position: relative;
 	z-index: 3;			/*Makes sure the UL is stacked on top of the next div*/
-	padding-left: 0;
-	margin: 0;
-	list-style-type: none;
 	color: #FFFEEC;
-	text-align: center;
 	/*border: 1px solid yellow;*/
 }
 
@@ -283,6 +293,35 @@ nav ul li:last-child {
 	background-color: #A19892;
 	background-color: rgba(161, 152, 146, 0.96);
 }
+
+footer ul li {
+	display: inline-block;
+	margin-top: 10px;
+	margin-right: 8px;
+	font-size: 14px;
+	/*border: 1px solid yellow;*/
+}
+
+footer ul li:last-child {
+	margin-right: 0;
+}
+
+footer li a {
+	color: #166187;
+}
+
+footer li a:hover {
+	text-decoration: underline;
+}
+
+#copyright {
+	text-align: center;
+	
+}
+#copyright p {
+	display: inline-block;
+}
+
 
 /*DESKTOP STYLES
 ----------------------------------------*/
