@@ -27,7 +27,13 @@ Grey		#A19892		rgb(161, 152, 146)
 Green		#678585		rgb(103, 133, 21)
 ------------------------------*/
 
+/*
+TO DO:
 
+- Body width 100%
+- Make page container max-width 1000px ++
+
+*/
 
 /*Test stage*/
 
@@ -40,11 +46,17 @@ main, article, header, nav, section, aside, footer {
 }
 
 body {
-	margin: 0;
 	background-color: #000;
+	margin: 0;
 	/*background-color: white;*/
 }
+p {
 
+}
+
+footer p {
+	font-size: 12px;
+}
 a {
 	text-decoration: none;
 	color: #FFFEEC;
@@ -52,9 +64,57 @@ a {
 	/*border: 1px dotted yellow;*/
 }
 
+header ul,
+footer ul {
+	padding-left: 0;
+	margin: 0;
+	list-style-type: none;
+	text-align: center;
+}
+
+.texture {
+	background-image: url("../images/texture_1600.jpg");
+	background-repeat: no-repeat;
+
+}
+
 .flexbox {
 	display: flex;
 	flex-flow: wrap;
+}
+
+/* Arrow shaped sections */
+
+.container-right-arrow-section {
+	width: 85%;
+	overflow: hidden;
+	/*border: 1px solid yellow;*/
+}
+.main-right-arrow-section {
+	min-width: 73.5%;
+	height: 350px;
+	float: left;
+	/*border: 1px dotted red;*/
+}
+.top-right-arrow-section {
+	/*border: 1px dotted lightblue;*/
+	height: 0;
+	width: 0;
+	border-bottom-width: 175px;
+	border-bottom-style: solid;
+	border-bottom-color: inherit;
+	border-right: 175px solid #000;
+	float: left;
+}
+.bottom-right-arrow-section {
+	/*border: 1px dotted lightgreen;*/
+	height: 0;
+	width: 0;
+	border-top-width: 175px;
+	border-top-style: solid;
+	border-top-color: inherit;
+	border-right: 175px solid #000;
+	float: left;
 }
 
 /* FONT DECLARATIONS 
@@ -64,7 +124,8 @@ body {
 	font-family: "raleway-regular", helvetica, sans-serif;
 }
 
-h1, nav ul, a {
+h1, header ul, footer ul, a {
+
 	font-family: "happymonkey-regular", arial, sans-serif;
 }
 
@@ -139,9 +200,8 @@ nav ul {
 #main-navigation ul {
 	position: relative;
 	z-index: 3;			/*Makes sure the UL is stacked on top of the next div*/
-	margin: 0;
 	font-size: 16px;
-	text-align: center;
+	color: #FFFEEC;
 	/*border: 1px solid yellow;*/
 }
 
@@ -289,6 +349,49 @@ nav ul li:last-child {
 -------------------------------*/
 
 
+/* FOOTER
+-------------------------------------------------------------------------------------------*/
+#page-footer .container-right-arrow-section {
+	max-width: 1300px;
+	background-position: -300px -40px;
+	/*background-size: 100% 50px;*/
+	border-color: #A19892;
+	border-color: rgba(161, 152, 146, 0.96);
+	color: #000;
+	/*border: 1px dotted yellow;*/
+}
+#page-footer .main-right-arrow-section {
+	background-color: #A19892;
+	background-color: rgba(161, 152, 146, 0.96);
+}
+
+footer ul li {
+	display: inline-block;
+	margin-top: 10px;
+	margin-right: 8px;
+	font-size: 14px;
+	/*border: 1px solid yellow;*/
+}
+
+footer ul li:last-child {
+	margin-right: 0;
+}
+
+footer li a {
+	color: #166187;
+}
+
+footer li a:hover {
+	text-decoration: underline;
+}
+
+#copyright {
+	text-align: center;
+	
+}
+#copyright p {
+	display: inline-block;
+}
 
 
 /*DESKTOP STYLES
