@@ -366,16 +366,14 @@ nav ul li:last-child {
 	max-width: 1000px;
 	min-height: 750px;
 	position: relative;
-	background-image: url("../images/hero-image_1000.jpg");
-	background-repeat: no-repeat;
-	background-size: contain;
-	border: 1px dotted yellow;
+	background: url("../images/hero-image_1000.jpg") center no-repeat;
+	/*border: 1px dotted yellow;*/
 }
 
 #slogan {
 	position: absolute;
-	bottom: 0;
-	left: 50%;
+	bottom: 10px;
+	left: 37%;
 	display: inline-block;
 	font-size: 1.8em;
 	font-weight: bold;
@@ -405,10 +403,10 @@ nav ul li:last-child {
 	position: relative;
 	width: 0;
 	height: 0;
-	top: .7em;
+	top: .72em;
 	left: 4.5em;
-	border-top: .75em solid #FFFEEC;
-	border-right: .75em solid transparent;
+	border-top: .72em solid #FFFEEC;
+	border-right: .72em solid transparent;
 }
 #slogan .trapezoid:last-child {
 	background-color: #C91E90;
@@ -425,10 +423,10 @@ nav ul li:last-child {
 	position: relative;
 	width: 0;
 	height: 0;
-	top: -1.25em;
+	top: -1.24em;
 	left: -0.7em;
-	border-bottom: .75em solid #C91E90;
-	border-left: .75em solid transparent;
+	border-bottom: .72em solid #C91E90;
+	border-left: .72em solid transparent;
 }
 
 
@@ -570,7 +568,9 @@ footer li a:hover {
 /*TABLET STYLES
 ----------------------------------------*/
 @media screen and (min-width: 481px) and (max-width: 800px) {
-	
+	body {
+		background-color: white;
+	}
 }
 
 /*MOBILE STYLES
