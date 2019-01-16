@@ -85,24 +85,24 @@ footer ul {
 
 .flexbox {
 	display: flex;
-	flex-flow: wrap;
+	flex-flow: row wrap;
 }
 
 /* Arrow shaped sections */
 
 .container-right-arrow-section {
-	width: 85%;
 	overflow: hidden;
-	/*border: 1px solid yellow;*/
+	width: 85%;
+	border: 1px solid yellow;
 }
 .main-right-arrow-section {
 	min-width: 73.5%;
 	height: 350px;
 	float: left;
-	/*border: 1px dotted red;*/
+	border: 1px dotted red;
 }
 .top-right-arrow-section {
-	/*border: 1px dotted lightblue;*/
+	border: 1px dotted lightblue;
 	height: 0;
 	width: 0;
 	border-bottom-width: 175px;
@@ -112,7 +112,7 @@ footer ul {
 	float: left;
 }
 .bottom-right-arrow-section {
-	/*border: 1px dotted lightgreen;*/
+	border: 1px dotted lightgreen;
 	height: 0;
 	width: 0;
 	border-top-width: 175px;
@@ -401,11 +401,11 @@ footer li a:hover {
 }
 #social-links li div:last-child {
 	/*position: relative;*/
-	width: 100px;
-	height: 90px;
+	width: 80px;
+	height: 70px;
 	background-repeat: no-repeat;
 	background-size: contain;
-	/*border: 1px dotted yellow;*/
+	border: 1px dotted yellow;
 }
 
 /* Triangular social buttons */
@@ -460,7 +460,7 @@ footer li a:hover {
 
 #contact-info {
 	/*display: inline-block;*/
-	/*border: 1px dotted green;*/
+	border: 1px dotted green;
 }
 #copyright {
 	text-align: center;
