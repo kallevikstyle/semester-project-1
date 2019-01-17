@@ -24,13 +24,13 @@ Blue 		#166187		rgb(22, 97, 135)
 Pink		#C91E90		rgb(201, 30, 144)
 Yellow		#E3C91E		rgb(227, 201, 30)
 Grey		#A19892		rgb(161, 152, 146)
-Green		#678585		rgb(103, 133, 21)
+Green		#678515		rgb(103, 133, 21)
 ------------------------------*/
 
 /*
 TO DO:
 
-- Circular menu: https://codepen.io/asbjornkallevik/pen/XoQPGa;
+- Blurb area eror checking
 
 */
 
@@ -90,38 +90,42 @@ footer ul {
 	display: flex;
 	flex-flow: row wrap;
 }
-.no-wrap {
-	flex-wrap: nowrap;
-}
+
 .column {
 	flex-direction: column;
 }
 
-/* Arrow shaped sections */
+/* ---- Arrow shaped sections ---- */
 
-.container-right-arrow-section {
+.container-arrow-section {
 	overflow: hidden;
-	max-width: 1200px;
+	flex-wrap: nowrap;
+	width: 100%;
+	/*border: 1px dotted white;*/
+}
+
+.main-arrow-section {
+	min-width: 73%;
+	height: 350px;
+}
+.tip-arrow-section {
+	border-color: inherit;
+	flex-wrap: nowrap;
+	flex-direction: column;
 	/*border: 1px dotted yellow;*/
 }
 
 
-.main-right-arrow-section {
-	min-width: 73.5%;
-	height: 350px;
-	/*border: 1px solid green;*/
-}
 .top-right-arrow-section {
-	/*border: 1px dotted lightblue;*/
 	height: 0;
 	width: 0;
 	border-bottom-width: 175px;
 	border-bottom-style: solid;
 	border-bottom-color: inherit;
 	border-right: 175px solid #000;
+	/*border: 1px dotted red;*/
 }
 .bottom-right-arrow-section {
-	/*border: 1px dotted lightgreen;*/
 	height: 0;
 	width: 0;
 	border-top-width: 175px;
@@ -129,7 +133,23 @@ footer ul {
 	border-top-color: inherit;
 	border-right: 175px solid #000;
 }
-
+.bottom-left-arrow-section {
+	height: 0;
+	width: 0;
+	border-top-width: 175px;
+	border-top-style: solid;
+	border-top-color: inherit;
+	border-left: 175px solid #000;
+	/*border: 1px dotted red;*/
+}
+.top-left-arrow-section {
+	height: 0;
+	width: 0;
+	border-bottom-width: 175px;
+	border-bottom-style: solid;
+	border-bottom-color: inherit;
+	border-left: 175px solid #000;
+}
 
 /* FONT DECLARATIONS 
 -------------------------------*/
@@ -358,19 +378,19 @@ nav ul li:last-child {
 }
 
 
-/* CTA AREA
+/*------------------------------------------------------------------------------------------
+ CTA AREA
 (home page)
 -------------------------------------------------------------------------------------------*/
 #hero-img {
 	margin: 0 auto;
-	max-width: 1000px;
-	min-height: 750px;
+	max-width: 1200px;
+	min-height: 900px;
 	position: relative;
-	background: url("../images/hero-image_1000.jpg") center no-repeat;
+	background: url("../images/hero-image_1200.jpg") center no-repeat;
+	/*background-size: cover;*/
 	/*border: 1px dotted yellow;*/
 }
-
-
 
 
 #slogan {
@@ -432,23 +452,61 @@ nav ul li:last-child {
 	border-left: .72em solid transparent;
 }
 
+/* NEWS SECTION
+	Home page
+------------------------------------------------------------------------------------------*/
+main .container-arrow-section:first-of-type {
+	border-color: #166187;
+
+}
+main .main-arrow-section:first-of-type {
+	background-color: #166187;
+}
+
+/* INFO BLURB SECTION
+	Home page
+------------------------------------------------------------------------------------------*/
+#test {
+	
+}
+#math-girl {
+	min-width: 27%;
+	height: 350px;
+	border: 1px dotted yellow;
+
+}
+#info-blurb {
+
+}
+#info-blurb .container-arrow-section {
+	border-color: #678515;
+	/*width: 100%;*/
+}
+#info-blurb .main-arrow-section {
+	background-color: #678515;
+	/*border: 1px dotted yellow;*/
+}
 
 
 /* FOOTER
 -------------------------------------------------------------------------------------------*/
-#page-footer .container-right-arrow-section {
-	/*max-width: 1300px;*/
+#page-footer {
+	flex-wrap: nowrap;
+	width: 100%;
+	/*border: 1px dotted red;*/
+}
+#page-footer .container-arrow-section {
+	width: 85%;
 	background-position: -300px -40px;
 	border-color: #A19892;
 	border-color: rgba(161, 152, 146, 0.96);
 	color: #000;
+	/*border: 1px dashed pink;*/
 }
-#page-footer .main-right-arrow-section {
+#page-footer .main-arrow-section {
 	background-color: #A19892;
 	background-color: rgba(161, 152, 146, 0.96);
-}
-#page-footer .right-arrow-tip {
-	border-color: inherit;
+
 }
 
 footer ul li {
@@ -470,6 +528,7 @@ footer li a {
 footer li a:hover {
 	text-decoration: underline;
 }
+
 
 #social-links ul {
 	margin: 50px auto 20px auto;
@@ -556,7 +615,7 @@ footer li a:hover {
 }
 
 #page-footer-right {
-	width: 15%;
+	width: 100%;
 	height: 350px;
 	background-color: #000;
 	/*border: 1px dotted yellow;*/
