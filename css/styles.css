@@ -56,6 +56,9 @@ body {
 	max-width: 1200px;
 	/*border: 1px dashed red;*/
 }
+#page-section {
+	/*width: 100%;*/
+}
 
 p {
 
@@ -100,11 +103,15 @@ footer ul {
 .container-arrow-section {
 	overflow: hidden;
 	flex-wrap: nowrap;
-	width: 100%;
+	width: 85%;
 	/*border: 1px dotted white;*/
 }
+.container-arrow-section + * {
+	width: 15%;
+	height: 350px;
+}
 .main-arrow-section {
-	min-width: 73%;
+	width: 100%;
 	height: 350px;
 }
 .tip-arrow-section {
@@ -452,37 +459,33 @@ nav ul li:last-child {
 /* NEWS SECTION
 	Home page
 ------------------------------------------------------------------------------------------*/
-main .container-arrow-section:first-of-type {
+#latest-news {
 	border-color: #166187;
-
-}
-main .main-arrow-section:first-of-type {
 	background-color: #166187;
+
 }
 
 /* INFO BLURB SECTION
 	Home page
 ------------------------------------------------------------------------------------------*/
-#test {
+#info-blurb {
+	border-color: #678515;
+	background-color: #678515;
+	order: 2;
+}
+#info-blurb + * {
+	order: 1;
 	
 }
+
 #math-girl {
-	min-width: 27%;
+	/*min-width: 27%;
 	height: 350px;
-	border: 1px dotted yellow;
+	border: 1px dotted yellow;*/
 
 }
-#info-blurb {
 
-}
-#info-blurb .container-arrow-section {
-	border-color: #678515;
-	/*width: 100%;*/
-}
-#info-blurb .main-arrow-section {
-	background-color: #678515;
-	/*border: 1px dotted yellow;*/
-}
+
 
 
 /* FOOTER
@@ -493,7 +496,6 @@ main .main-arrow-section:first-of-type {
 	/*border: 1px dotted red;*/
 }
 #page-footer .container-arrow-section {
-	width: 85%;
 	background-position: -300px -40px;
 	border-color: #A19892;
 	border-color: rgba(161, 152, 146, 0.96);
@@ -612,10 +614,7 @@ footer li a:hover {
 }
 
 #page-footer-right {
-	width: 100%;
-	height: 350px;
-	background-color: #000;
-	/*border: 1px dotted yellow;*/
+	
 }
 
 /*DESKTOP STYLES
