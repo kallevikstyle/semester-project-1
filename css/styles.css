@@ -30,7 +30,7 @@ Green		#678515		rgb(103, 133, 21)
 /*
 TO DO:
 
-- Blurb area eror checking
+- Work on trapezoid images
 
 */
 
@@ -54,6 +54,7 @@ body {
 #page-container {
 	margin: 0 auto;
 	max-width: 1200px;
+	overflow: hidden;
 	/*border: 1px dashed red;*/
 }
 #page-section {
@@ -61,7 +62,7 @@ body {
 }
 
 p {
-
+	/*border: 1px dashed red;*/
 }
 
 footer p {
@@ -89,6 +90,11 @@ footer ul {
 
 }
 
+.img-trapezoid {
+	/*border: 1px dotted yellow;*/
+	
+}
+
 .flexbox {
 	display: flex;
 	flex-flow: row wrap;
@@ -109,6 +115,9 @@ footer ul {
 .container-arrow-section + * {
 	width: 15%;
 	height: 350px;
+}
+.container-arrow-section + .column > * {
+	height: 175px;
 }
 .main-arrow-section {
 	width: 100%;
@@ -466,6 +475,25 @@ nav ul li:last-child {
 	border-color: rgba(22, 97, 135, 0.96);
 	background-color: #166187;
 	background-color: rgba(22, 97, 135, 0.96);
+
+}
+
+#opening-hours {
+	
+	background-color: orange;
+	width: 100px;
+}
+
+.img-trapezoid {
+	/*border: 1px dotted red;*/
+	/*background-color: yellow;*/
+	background-image: url("../images/vr-guy-test.png");
+	background-repeat: no-repeat;
+	position: relative;
+	right: 175px;
+	width: 350px;
+}
+.img-trapezoid::before {
 
 }
 
