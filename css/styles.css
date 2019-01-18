@@ -430,7 +430,7 @@ nav ul li:last-child {
 	background-color: #FFFEEC;
 	float: right;
 	margin-top: 7px;
-	display: inline-block;
+	/* display: inline-block; */
 	width: 4.5em;
 	height: .7em;
 	
@@ -450,7 +450,7 @@ nav ul li:last-child {
 	float: left;
 	margin-top: 7px;
 	margin-right: .2em;
-	display: inline-block;
+	/* display: inline-block; */
 	width: 3.85em;
 	height: .7em;
 	
