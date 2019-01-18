@@ -113,6 +113,7 @@ footer ul {
 .main-arrow-section {
 	width: 100%;
 	height: 350px;
+	background-color: inherit;
 }
 .tip-arrow-section {
 	border-color: inherit;
@@ -460,8 +461,11 @@ nav ul li:last-child {
 	Home page
 ------------------------------------------------------------------------------------------*/
 #latest-news {
+	background-position: -300px -40px;
 	border-color: #166187;
+	border-color: rgba(22, 97, 135, 0.96);
 	background-color: #166187;
+	background-color: rgba(22, 97, 135, 0.96);
 
 }
 
@@ -469,8 +473,11 @@ nav ul li:last-child {
 	Home page
 ------------------------------------------------------------------------------------------*/
 #info-blurb {
+	background-size: cover;
 	border-color: #678515;
+	border-color: rgba(103, 133, 21, 0.96);
 	background-color: #678515;
+	background-color: rgba(103, 133, 21, 0.96);
 	order: 2;
 }
 #info-blurb + * {
@@ -497,16 +504,14 @@ nav ul li:last-child {
 }
 #page-footer .container-arrow-section {
 	background-position: -300px -40px;
+	background-color: #A19892;
+	background-color: rgba(161, 152, 146, 0.96);
 	border-color: #A19892;
 	border-color: rgba(161, 152, 146, 0.96);
 	color: #000;
 	/*border: 1px dashed pink;*/
 }
-#page-footer .main-arrow-section {
-	background-color: #A19892;
-	background-color: rgba(161, 152, 146, 0.96);
 
-}
 
 footer ul li {
 	display: inline-block;
