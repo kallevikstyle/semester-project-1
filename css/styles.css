@@ -91,8 +91,9 @@ footer ul {
 }
 
 .img-trapezoid {
-	/*border: 1px dotted yellow;*/
-	
+	background-repeat: no-repeat;
+	position: relative;
+	width: 355px;	
 }
 
 .flexbox {
@@ -481,20 +482,12 @@ nav ul li:last-child {
 #opening-hours {
 	
 	background-color: orange;
-	width: 100px;
+	width: 100%;
 }
 
-.img-trapezoid {
-	/*border: 1px dotted red;*/
-	/*background-color: yellow;*/
-	background-image: url("../images/vr-guy-test.png");
-	background-repeat: no-repeat;
-	position: relative;
+#opening-hours + .img-trapezoid {
+	background-image: url("../images/vr-guy_grey_355.png");
 	right: 175px;
-	width: 350px;
-}
-.img-trapezoid::before {
-
 }
 
 /* INFO BLURB SECTION
@@ -510,17 +503,16 @@ nav ul li:last-child {
 }
 #info-blurb + * {
 	order: 1;
-	
+}
+#newsletter {
+	order: 2;
 }
 
-#math-girl {
-	/*min-width: 27%;
-	height: 350px;
-	border: 1px dotted yellow;*/
-
+#info-blurb .main-arrow-section::before {
+	content: url("../images/math-girl_yellow_355.png");
+	position: absolute;
+	margin-left: -355px;	/* Keeping the picture of the girl responsive with the green arrow section */
 }
-
-
 
 
 /* FOOTER
