@@ -103,7 +103,6 @@ footer ul {
 	width: 100%;
 	/*border: 1px dotted white;*/
 }
-
 .main-arrow-section {
 	min-width: 73%;
 	height: 350px;
@@ -114,8 +113,6 @@ footer ul {
 	flex-direction: column;
 	/*border: 1px dotted yellow;*/
 }
-
-
 .top-right-arrow-section {
 	height: 0;
 	width: 0;
