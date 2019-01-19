@@ -518,6 +518,12 @@ nav ul li:last-child {
 	margin-left: -355px;	/* Keeping the picture of the girl responsive with the green arrow section */
 }
 
+/* Newsletter area */
+
+#newsletter {
+	color: #FFFEEC;
+}
+
 
 /* FOOTER
 -------------------------------------------------------------------------------------------*/
