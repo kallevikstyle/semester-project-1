@@ -86,7 +86,7 @@ footer ul {
 
 .texture {
 	background-image: url("../images/texture_1600.jpg");
-	background-repeat: no-repeat;
+	/* background-repeat: no-repeat; */
 
 }
 
@@ -181,10 +181,14 @@ h1, header ul, footer ul, a, #hero-img {
 
 /* HEADER AND NAVIGATION
 -------------------------------------------------------------------------------*/
+#container-page-header {
+	background-position: -200px -80px;
+}
 
 #page-header {
 	position: relative;
 	background-color: #166187;
+	background-color: rgba(22, 97, 135, 0.98);
 	width: 100%;
 	height: 150px;
 	/*border: 1px dotted White;*/
