@@ -30,7 +30,7 @@ Green		#678515		rgb(103, 133, 21)
 /*
 TO DO:
 
-- Work on trapezoid images
+- Work on newsletter section
 
 */
 
@@ -63,6 +63,10 @@ body {
 
 p {
 	/*border: 1px dashed red;*/
+}
+
+h2 {
+	font-size: 2em;
 }
 
 footer p {
@@ -103,6 +107,27 @@ footer ul {
 
 .column {
 	flex-direction: column;
+}
+
+/* Forms */
+
+form label {
+	width: 50px;
+	display: inline-block;
+	text-align: right;
+	float: left;
+	clear: left;
+	margin-right: 5px;
+}
+
+form input[type="text"],
+form input[type="email"] {
+	font-size: .8em;
+	margin-bottom: 5px;
+	float: left;
+	/*margin-left: 5px;*/
+
+
 }
 
 /* ---- Arrow shaped sections ---- */
@@ -173,7 +198,7 @@ body {
 	font-family: "raleway-regular", helvetica, sans-serif;
 }
 
-h1, header ul, footer ul, a, #hero-img {
+h1, h2, header ul, footer ul, a, form label, #hero-img, #newsletter input[type="submit"] {
 
 	font-family: "happymonkey-regular", arial, sans-serif;
 }
@@ -484,9 +509,31 @@ nav ul li:last-child {
 }
 
 #opening-hours {
+	color: #FFFEEC;	
+}
+#opening-hours h2 {
+	position: relative;
+	color: #166187;
+	left: -100px;
+	line-height: 0;
+}
+#opening-hours table {
+	width: 120%;
+}
+#opening-hours table tr {
+	display: block;
+	position: relative;
+	left: -70px;
+	width: 130%;
+}
+#opening-hours table th {
+	width: 80px;
+	text-align: right;
+}
+
+#opening-hours table td {
 	
-	background-color: orange;
-	width: 100%;
+	/* width: 120%; */
 }
 
 #opening-hours + .img-trapezoid {
@@ -521,8 +568,47 @@ nav ul li:last-child {
 /* Newsletter area */
 
 #newsletter {
+	position: relative;
 	color: #FFFEEC;
+
 }
+#newsletter header {
+	/* padding-top: 0; */
+	
+}
+
+#newsletter h2 {
+	margin: -35px 0 10px 0;
+	color: #FFFEEC;
+	text-align: center;
+}
+#newsletter p {
+	font-size: 14px; 
+	margin: 5px 0 0 5px;
+	width: 106.5%;
+}
+
+#newsletter form {
+	
+	font-size: 14px;
+	display: block;
+	margin: 10px 0 0 5px;
+	width: 150%;
+	overflow: hidden;
+
+}
+
+/* Submit button */
+#newsletter input[type="submit"] {
+	position: absolute;
+	bottom: 10px;
+	right: -115px;
+	background-color: #E3C91E;
+	height: 30px;
+	padding: 5px 10px;
+	border: 0;
+}
+
 
 
 /* FOOTER
