@@ -67,6 +67,11 @@ p {
 
 h2 {
 	font-size: 2em;
+	color: #FFFEEC;
+}
+
+h3 {
+	font-size: 1.4em;
 }
 
 footer p {
@@ -103,6 +108,10 @@ footer ul {
 .flexbox {
 	display: flex;
 	flex-flow: row wrap;
+}
+
+.nowrap {
+	flex-flow: nowrap;
 }
 
 .column {
@@ -198,7 +207,7 @@ body {
 	font-family: "raleway-regular", helvetica, sans-serif;
 }
 
-h1, h2, header ul, footer ul, a, form label, #hero-img, #newsletter input[type="submit"] {
+h1, h2, h3, header ul, footer ul, a, form label, #hero-img, #newsletter input[type="submit"] {
 
 	font-family: "happymonkey-regular", arial, sans-serif;
 }
@@ -505,7 +514,58 @@ nav ul li:last-child {
 	border-color: rgba(22, 97, 135, 0.96);
 	background-color: #166187;
 	background-color: rgba(22, 97, 135, 0.96);
+}
 
+#latest-news h2 {
+text-align: center;
+margin: 5px 0;
+}
+/* News article boxes */
+#news-article-wrapper {
+	position: relative;
+}
+.news-article {
+	background-color: #FFFEEC;
+	margin: 0 auto;
+	width: 35%;
+	height: 280px;
+	font-size: 12px;
+
+}
+
+.news-article:first-child {
+	margin-right: 0; 
+}
+
+#more-news {
+	position: absolute;
+	right: -100px;
+	top: 115px;
+	height: 20px;
+	padding: 5px;
+}
+#more-news a:hover {
+	text-decoration: underline;
+}
+
+ .news-article h3 {
+	 text-align: center;
+	 margin: 10px 0;
+	 color: #166187;
+	 /* border: 1px dotted green; */
+ }
+.news-article p {
+	width: 90%;
+	margin: 0 auto;
+}
+
+
+.news-article img {
+	display: block;
+	margin: 0 auto;
+	width: 100%;
+	height: auto;
+	/* border: 1px dotted cyan; */
 }
 
 #opening-hours {
@@ -529,11 +589,6 @@ nav ul li:last-child {
 #opening-hours table th {
 	width: 80px;
 	text-align: right;
-}
-
-#opening-hours table td {
-	
-	/* width: 120%; */
 }
 
 #opening-hours + .img-trapezoid {
@@ -579,7 +634,6 @@ nav ul li:last-child {
 
 #newsletter h2 {
 	margin: -35px 0 10px 0;
-	color: #FFFEEC;
 	text-align: center;
 }
 #newsletter p {
