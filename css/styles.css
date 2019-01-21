@@ -240,7 +240,7 @@ h1, h2, h3, header ul, footer ul, a, form label, #hero-img, #newsletter input[ty
 header #logo {
 	/*border: 1px solid yellow;*/
 	width: 220px;
-	height: 150px;
+	height: 100%;
 	background-image: url("../images/logo/logo.png");
 	background-repeat: no-repeat;
 	background-size: contain;
@@ -271,6 +271,7 @@ header #logo {
 	border-left: 150px solid transparent;
 	
 }
+
 /* Navigation */
 
 nav ul {
@@ -286,47 +287,47 @@ nav ul {
 	top: 0;
 	right: 250px;
 	width: 210px;
+	font-size: 16px;
+	color: #FFFEEC;
 }
 
 #main-navigation ul {
 	position: relative;
 	z-index: 3;			/*Makes sure the UL is stacked on top of the next div*/
-	font-size: 16px;
-	color: #FFFEEC;
+	
 	/*border: 1px solid yellow;*/
 }
 
-nav ul li {
+#main-navigation ul li {
 	/*border: 1px dotted pink;*/
 	position: relative;
 	width: 120px;
 	margin-bottom: 5px;
 }
 
-nav ul li:last-child {
+#main-navigation ul li:last-child {
 	margin-bottom: 0;
 }
 
 /* Pushing the menu buttons towards the right */
 #main-navigation ul li:first-child {
-	left: 102px;
+	left: 98px;
 }
 #main-navigation ul li:nth-child(2) {
-	left: 68px;
+	left: 66px;
 }
 #main-navigation ul li:nth-child(3) {
-	left: 34px;
+	left: 32px;
 }
 
+
 /* 'Get involved' and 'About us' nav */
-#right-hand-navigation {
-	/*border: 1px solid yellow;*/
-}
 
 #right-hand-navigation ul {
 	margin: 20px 0 0 20px;
 	/*margin-top: 20px;*/
 	font-size: 10px;
+	/*border: 1px dashed red;*/
 }
 
 #right-hand-navigation ul li {
@@ -383,10 +384,8 @@ nav ul li:last-child {
 	border-top: 25px solid #166187;
 	border-right: 25px solid transparent;
 }
-#page-header-right a {
-	position: relative;
-}
-#tickets-btn {
+
+#tours-btn {
 	position: relative;
 	left: -40px;
 	display: inline-block;
@@ -399,7 +398,7 @@ nav ul li:last-child {
 	color: #FFFEEC;
 	text-transform: uppercase;
 }
-#tickets-btn::after {
+#tours-btn::after {
 	content: "";
 	width: 0;
 	height: 0;
@@ -426,11 +425,11 @@ nav ul li:last-child {
 	border-top-color: #FFFEEC;
 }
 
-#tickets-btn:hover {
+#tours-btn:hover {
 	background-color: #E3C91E;
 	color: #000;
 }
-#tickets-btn:hover::after {
+#tours-btn:hover::after {
 	border-bottom-color: #E3C91E;
 }
 
@@ -633,6 +632,10 @@ text-align: center;
 }
 #info-blurb img {
 	float: right;
+	border: 3px solid #E3C91E;
+	border-left: none;
+	border-bottom: none;
+
 	margin: 0 0 10px 10px;
 }
 
@@ -832,14 +835,104 @@ footer li a:hover {
 ----------------------------------------*/
 @media screen and (max-width: 480px) {
 
-	/*article#pop-tours section,
-	article#discover,
-	article#reviews,
-	aside#social {
-		min-width: 90%;
-	}*/
+/* HEADER AND NAV
+-----------------------------*/
+#page-header {
+	height: 200px;
+	overflow: hidden;
+}
+#page-header #logo {
+	margin-top: 2px;
+	width: 150px;
+	background-position: top;
 
-	
+}
+#page-header-right {
+	width: 0;
+}
 
+#page-header-right::before {
+	right: 0;
+	border-width: 200px;
+}
+
+/* Navigation */
+#page-header-right > a {
+	position: absolute;
+	z-index: 3;
+}
+
+#main-navigation {
+	top: 80px;
+	right: 75px;
+	font-size: 12px;
+}
+#main-navigation ul li {
+	width: 80px;
+}
+
+#right-hand-navigation {
+	position: relative;
+	left: -100px;
+	top: 70px;
+}
+#right-hand-navigation ul li {
+	display: inline-block;
+	/*margin-bottom: 20px;*/
+	width: 70px;
+	/*border: 1px dotted yellow;*/
+}
+#right-hand-navigation ul li:first-child {
+	margin-right: 0;
+}
+
+/* Buttons */
+.btn-border {	
+	height: 20px;
+}
+
+.btn-border::after {
+	top: -1px;
+	right: -22px;
+	border-top: 21px solid transparent;
+	border-right: 21px solid transparent;
+}
+
+.btn {
+	border: 1px solid transparent;
+  	padding-top: 1px;
+  	height: 18px;
+  }
+
+.btn::after {
+	top: -1px;
+	right: -20px;
+	border-top: 20px solid #166187;
+	border-right: 20px solid transparent;
+}
+
+#main-navigation ul li:first-child {
+	left: 80px;
+}
+#main-navigation ul li:nth-child(2) {
+	left: 54px;
+}
+#main-navigation ul li:nth-child(3) {
+	left: 28px;
+}
+
+#tours-btn {
+	font-size: 12px;
+	top: 80px;
+	left: -150px;
+	padding: 3px 5px 5px 5px; 
+	width: 90px;
+	height: 12px;
+}
+#tours-btn::after {
+	right: -20px;
+	border-bottom: 20px solid #C91E90;
+	border-right: 20px solid transparent;
+}
 	
 }
