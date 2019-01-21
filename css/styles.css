@@ -30,7 +30,9 @@ Green		#678515		rgb(103, 133, 21)
 /*
 TO DO:
 
-- Work on newsletter section
+- Media query for 320px??
+- Texture for mobile
+- Hero img for mobile
 
 */
 
@@ -632,10 +634,11 @@ text-align: center;
 }
 #info-blurb img {
 	float: right;
+	width: 165px;
+	height: auto;
 	border: 3px solid #E3C91E;
 	border-left: none;
 	border-bottom: none;
-
 	margin: 0 0 10px 10px;
 }
 
@@ -650,11 +653,6 @@ text-align: center;
 #newsletter {
 	position: relative;
 	color: #FFFEEC;
-
-}
-#newsletter header {
-	/* padding-top: 0; */
-	
 }
 
 #newsletter h2 {
@@ -668,7 +666,6 @@ text-align: center;
 }
 
 #newsletter form {
-	
 	font-size: 14px;
 	display: block;
 	margin: 10px 0 0 5px;
@@ -731,20 +728,16 @@ footer li a:hover {
 
 #social-links ul {
 	margin: 50px auto 20px auto;
-	/*display: inline-block;*/
-	/*border: 1px dotted red;*/
 }
+
 #social-links li {
 	margin: 0;
-	
 }
-#social-links li div:last-child {
-	/*position: relative;*/
+#social-links li div {
 	width: 80px;
 	height: 70px;
 	background-repeat: no-repeat;
 	background-size: contain;
-	/*border: 1px dotted yellow;*/
 }
 
 /* Triangular social buttons */
@@ -836,8 +829,7 @@ footer li a:hover {
 @media screen and (max-width: 480px) {
 
 .flexbox {
-	display: flex;
-	flex-flow: column wrap;
+	flex-direction: column;
 }
 
 /* Arrow sections */
@@ -869,13 +861,13 @@ footer li a:hover {
 .bottom-right-arrow-section,
 .bottom-left-arrow-section,
 .top-left-arrow-section {
-	
 	display: none;
 	/*border: 1px dotted red;*/
 }
-
-
-
+.container-arrow-section + * {
+	width: 100%;
+	height: auto;
+}
 
 /* HEADER AND NAV
 -----------------------------*/
@@ -978,6 +970,129 @@ footer li a:hover {
 	border-right: 20px solid transparent;
 }
 
+/* News section mobile 
+--------------------------------------*/
+.news-article {
+	width: 80%;
+	
+}
+.news-article:first-child {
+	margin: 20px auto;
+}
+#more-news {
+	margin: 0 auto;
+	position: relative;
+	top: 80px;
+	right: 0;
+}
+#latest-news .tip-arrow-section {
+	background-image: url("../images/vr-guy_grey_375.jpg");
+	background-repeat: no-repeat;
+}
+#latest-news .tip-arrow-section::after {
+	border-left-color: transparent;
+	border-right-color: transparent;
+}
+
+/* Opening hours */
+#opening-hours h2 {
+	position: static;
+}
+ #opening-hours table {
+	 width: 50%;
+	 margin: 0 auto;
+ }
+ #opening-hours table tr {
+	 position: static;
+ }
+ #opening-hours table th {
+	 text-align: left;
+ }
+ 
+ /* Info blurb section */
+ #opening-hours + .img-trapezoid {
+	display: none;
+ }
+ #info-blurb {
+	 order: 1;
+ }
+#info-blurb + * {
+	order: 2;
+}
+#info-blurb .main-arrow-section {
+	order: 1;
+}
+#info-blurb .tip-arrow-section {
+	order: 2;
+}
+#info-blurb .main-arrow-section::before {
+	content: "";
+	display: none;
+}
+#info-blurb .text-background {
+	width: 85%;
+}
+#info-blurb p {
+	font-size: 1.4em;
+}
+#info-blurb img {
+	float: none;
+	width: 100%;
+	margin: 0 auto;
+	border-width: 4px;
+}
+#info-blurb .tip-arrow-section {
+	background-image: url("../images/math-girl_yellow_375.jpg");
+	background-repeat: no-repeat;
+}
+#info-blurb .tip-arrow-section::after {
+	border-left-color: transparent;
+	border-right-color: transparent;
+}
+
+/* Newsletter section */
+#newsletter {
+	position: static;
+	height: auto;
+}
+
+#newsletter + div {
+	display: none;
+}
+#newsletter h2 {
+	margin: 10px 0 0 0;
+}
+#newsletter p {
+	font-size: 1.4em;
+	width: 100%;
+	text-align: center;
+}
+#newsletter form {
+	font-size: 16px;
+	width: 70%;
+	margin: 15px auto;
+}
+
+#newsletter form input[type="text"],
+#newsletter form input[type="email"] {
+	width: 100%;
+	padding: 5px 10px;
+	float: none;
+}
+
+#newsletter form label {
+	display: block;
+	float: none;
+	text-align: left;
+	width: 50%;
+}
+#newsletter input[type="submit"] {
+	position: static;
+	width: 100%;
+	margin: 10px 0;
+}
+
+
 /* FOOTER 
 -----------------------------------*/
 #page-footer {
@@ -990,10 +1105,22 @@ footer li a:hover {
 	border-color: #A19892;
 	border-color: rgba(161, 152, 146, 0.96);
 }
-
+#social-links ul {
+	margin-top: 30px;
+}
+#social-links li div {
+	width: 70px;
+	height: 60px;
+}
+#copyright {
+	position: relative;
+	top: 80px;
+}
+#copyright p {
+	display: block;
+}
 #page-footer-right {
 	display: none;
 }
-
 	
 }
