@@ -835,8 +835,14 @@ footer li a:hover {
 ----------------------------------------*/
 @media screen and (max-width: 480px) {
 
+.flexbox {
+	display: flex;
+	flex-flow: column wrap;
+}
+
 /* HEADER AND NAV
 -----------------------------*/
+
 #page-header {
 	height: 200px;
 	overflow: hidden;
@@ -934,5 +940,79 @@ footer li a:hover {
 	border-bottom: 20px solid #C91E90;
 	border-right: 20px solid transparent;
 }
+
+/* FOOTER 
+-----------------------------------*/
+#page-footer {
+	max-width: 400px;
+	margin: 0 auto;
+}
+
+.container-arrow-section {
+	overflow: hidden;
+	flex-wrap: nowrap;
+	width: 100%;
+	/*border: 1px dotted white;*/
+}
+.container-arrow-section + * {
+	/*width: 15%;
+	height: 350px;*/
+}
+.container-arrow-section + .column > * {
+	/*height: 175px;*/
+}
+.main-arrow-section {
+	width: 100%;
+	/*height: 350px;*/
+	background-color: inherit;
+}
+.tip-arrow-section {
+	border-color: inherit;
+	flex-wrap: nowrap;
+	flex-direction: row;
+	/*border: 1px dotted yellow;*/
+
+	/*border: 1px dotted yellow;*/
+}
+.top-right-arrow-section {	/*Is now bottom right arrow*/
+	border-bottom-style: none;
+	border-top-width: 225px;
+	border-right: 225px solid #000;
+	order: 2;
+	/*visibility: hidden;*/
+	/*border: 1px dotted red;*/
+}
+.bottom-right-arrow-section {	/*Is now bottom left arrow*/
+	border-left-style: none;
+	border-top-width: 225px;
+	border-left: 225px solid #000;
+	order: 1;
+	/*visibility: hidden;*/
+	/*border: 1px dotted red;*/
+}
+
+
+
+
+
+
+
+
+/*.bottom-left-arrow-section {
+	height: 0;
+	width: 0;
+	border-top-width: 175px;
+	border-top-style: solid;
+	border-top-color: inherit;
+	border-left: 175px solid #000;
+}
+.top-left-arrow-section {
+	height: 0;
+	width: 0;
+	border-bottom-width: 175px;
+	border-bottom-style: solid;
+	border-bottom-color: inherit;
+	border-left: 175px solid #000;
+}*/
 	
 }
