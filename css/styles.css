@@ -66,6 +66,8 @@ p {
 }
 
 h2 {
+	text-align: center;
+	margin: 5px 0;
 	font-size: 2em;
 	color: #FFFEEC;
 }
@@ -95,8 +97,10 @@ footer ul {
 
 .texture {
 	background-image: url("../images/texture_1600.jpg");
-	/* background-repeat: no-repeat; */
-
+}
+.text-background {
+	background-color: #FFFEEC;
+	background-color: rgba(255, 254, 236, 0.6);
 }
 
 .img-trapezoid {
@@ -518,7 +522,6 @@ nav ul li:last-child {
 
 #latest-news h2 {
 text-align: center;
-margin: 5px 0;
 }
 /* News article boxes */
 #news-article-wrapper {
@@ -573,9 +576,8 @@ margin: 5px 0;
 }
 #opening-hours h2 {
 	position: relative;
-	color: #166187;
 	left: -100px;
-	line-height: 0;
+	color: #166187;
 }
 #opening-hours table {
 	width: 120%;
@@ -607,11 +609,31 @@ margin: 5px 0;
 	background-color: rgba(103, 133, 21, 0.96);
 	order: 2;
 }
+
 #info-blurb + * {
 	order: 1;
 }
 #newsletter {
 	order: 2;
+}
+#info-blurb .text-background {
+	width: 94%;
+	padding: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	overflow: hidden;
+}
+
+#info-blurb p {
+	font-size: 1.2em;
+	/*border: 1px dotted red;*/
+}
+#info-blurb p:first-child {
+	margin-top: 0;
+}
+#info-blurb img {
+	float: right;
+	margin: 0 0 10px 10px;
 }
 
 #info-blurb .main-arrow-section::before {
