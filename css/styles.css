@@ -840,6 +840,43 @@ footer li a:hover {
 	flex-flow: column wrap;
 }
 
+/* Arrow sections */
+
+.container-arrow-section {
+	overflow: hidden;
+	flex-wrap: nowrap;
+	width: 375px;
+	margin: 0 auto;
+}
+
+.main-arrow-section {
+	width: 100%;
+	height: 100%;
+}
+
+.tip-arrow-section::after {
+	content: "";
+	width: 0;
+	height: 0;
+	border-left: 190px solid #000;
+	border-right: 190px solid #000;
+	border-style: solid;
+	border-top-width: 190px;
+	border-top-color: inherit;
+}
+
+.top-right-arrow-section,
+.bottom-right-arrow-section,
+.bottom-left-arrow-section,
+.top-left-arrow-section {
+	
+	display: none;
+	/*border: 1px dotted red;*/
+}
+
+
+
+
 /* HEADER AND NAV
 -----------------------------*/
 
@@ -948,71 +985,15 @@ footer li a:hover {
 	margin: 0 auto;
 }
 
-.container-arrow-section {
-	overflow: hidden;
-	flex-wrap: nowrap;
-	width: 100%;
-	/*border: 1px dotted white;*/
-}
-.container-arrow-section + * {
-	/*width: 15%;
-	height: 350px;*/
-}
-.container-arrow-section + .column > * {
-	/*height: 175px;*/
-}
-.main-arrow-section {
-	width: 100%;
-	/*height: 350px;*/
-	background-color: inherit;
-}
-.tip-arrow-section {
-	border-color: inherit;
-	flex-wrap: nowrap;
-	flex-direction: row;
-	/*border: 1px dotted yellow;*/
-
-	/*border: 1px dotted yellow;*/
-}
-.top-right-arrow-section {	/*Is now bottom right arrow*/
-	border-bottom-style: none;
-	border-top-width: 225px;
-	border-right: 225px solid #000;
-	order: 2;
-	/*visibility: hidden;*/
-	/*border: 1px dotted red;*/
-}
-.bottom-right-arrow-section {	/*Is now bottom left arrow*/
-	border-left-style: none;
-	border-top-width: 225px;
-	border-left: 225px solid #000;
-	order: 1;
-	/*visibility: hidden;*/
-	/*border: 1px dotted red;*/
+#page-footer .container-arrow-section {
+	background-position: -300px -40px;
+	border-color: #A19892;
+	border-color: rgba(161, 152, 146, 0.96);
 }
 
-
-
-
-
-
-
-
-/*.bottom-left-arrow-section {
-	height: 0;
-	width: 0;
-	border-top-width: 175px;
-	border-top-style: solid;
-	border-top-color: inherit;
-	border-left: 175px solid #000;
+#page-footer-right {
+	display: none;
 }
-.top-left-arrow-section {
-	height: 0;
-	width: 0;
-	border-bottom-width: 175px;
-	border-bottom-style: solid;
-	border-bottom-color: inherit;
-	border-left: 175px solid #000;
-}*/
+
 	
 }
