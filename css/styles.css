@@ -248,7 +248,12 @@ header #logo {
 	background-size: contain;
 	background-position: center;
 	margin-left: 10px;
+}
 
+header #logo a {
+	display: block;
+	width: inherit;
+	height: inherit;
 }
 
 #page-header-right {	/*The black top right section of header*/
@@ -435,6 +440,10 @@ nav ul {
 	border-bottom-color: #E3C91E;
 }
 
+.active {
+	border-bottom-width: 2px;
+	border-bottom-color: #E3C91E;
+}
 
 /*------------------------------------------------------------------------------------------
  CTA AREA
@@ -971,6 +980,11 @@ footer li a:hover {
 }
 #main-navigation ul li:nth-child(3) {
 	left: 28px;
+}
+
+.active {
+	border-bottom-width: 2px;
+	border-bottom-color: #E3C91E;
 }
 
 #tours-btn {
