@@ -534,7 +534,6 @@ text-align: center;
 	width: 35%;
 	height: 280px;
 	font-size: 12px;
-
 }
 
 .news-article:first-child {
@@ -571,6 +570,17 @@ text-align: center;
 	height: auto;
 	/* border: 1px dotted cyan; */
 }
+
+/* News articles - Hover and active states */
+
+.news-article:hover {
+	box-shadow: 5px 5px 20px rgba(0, 0, 0, .5);
+	position: relative;
+	left: -1px;
+	top: -1px;
+}
+
+/* Opening hours*/
 
 #opening-hours {
 	color: #FFFEEC;	
