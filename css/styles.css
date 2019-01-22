@@ -838,6 +838,10 @@ footer li a:hover {
 ----------------------------------------*/
 @media screen and (max-width: 480px) {
 
+.texture {
+	background-image: url("../images/texture_400.jpg");
+}
+
 .flexbox {
 	flex-direction: column;
 }
@@ -881,6 +885,9 @@ footer li a:hover {
 
 /* HEADER AND NAV
 -----------------------------*/
+#container-page-header {
+	background-position: 200px; left;
+}
 
 #page-header {
 	height: 200px;
@@ -980,6 +987,19 @@ footer li a:hover {
 	border-right: 20px solid transparent;
 }
 
+/*--------------------------
+ CTA AREA mobile 
+ ----------------------------*/
+
+ #hero-img {
+	max-width: 480px;
+	min-height: 693px;
+	background-image: url("../images/hero-image_480.jpg");
+ }
+
+ #slogan {
+	 left: 24%;
+ }
 /* News section mobile 
 --------------------------------------*/
 .news-article {
@@ -1009,7 +1029,7 @@ footer li a:hover {
 	position: static;
 }
  #opening-hours table {
-	 width: 50%;
+	 width: auto;
 	 margin: 0 auto;
  }
  #opening-hours table tr {
@@ -1018,6 +1038,7 @@ footer li a:hover {
  #opening-hours table th {
 	 text-align: left;
  }
+ 
  
  /* Info blurb section */
  #opening-hours + .img-trapezoid {
