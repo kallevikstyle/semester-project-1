@@ -582,14 +582,14 @@ footer li a:hover {
 	
 }
 
-/*-----------------------------
+/*--------------------------------------------------------------------------------------
  PAGES
- -------------------------------*/
+ --------------------------------------------------------------------------------------*/
 
- /*------------------------------------------------------------------------------------------
+ /*---------------------
  HOME PAGE
 	CTA area
--------------------------------------------------------------------------------------------*/
+-----------------------*/
 #hero-img {
 	margin: 0 auto;
 	max-width: 1200px;
@@ -845,9 +845,31 @@ text-align: center;
 	border: 0;
 }
 
+/*------------------
+ EXHIBITIONS 
+ -------------------*/
+ #exhibitions > * {
+	 width: 100%;
+ }
 
+#exhibitions #cosmology .diamond-icon {
+	background: url("../images/icons/diamond_cosmology_200.png") top left / contain no-repeat;
+	width: 200px;
+	height: 100%;
+	position: relative;
+	left: -100px;
+	/* border: 1px dotted yellow; */
+	
+}
 
+#exhibitions #cosmology > div:first-child {
+	background-color: #A19892;
+	width: 100%;
+	height: 500px;
+	position: relative;
+	left: 100px;
 
+}
 
 /*DESKTOP STYLES
 ----------------------------------------*/
