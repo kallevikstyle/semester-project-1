@@ -918,23 +918,23 @@ text-align: center;
 }
 
 /* Section wrappers */
-#exhibitions #cosmology .exhibition-wrapper {
+#cosmology .exhibition-wrapper {
 	background-color: #166187;
 	background-image: linear-gradient(to right, #166187, #166187, #166187, #000);
 }
-#exhibitions #evolution .exhibition-wrapper {
+#evolution .exhibition-wrapper {
 	background-color: #E3C91E;
 	background-image: linear-gradient(to right, #E3C91E, #E3C91E, #E3C91E, #000);
 }
-#exhibitions #biology .exhibition-wrapper {
+#biology .exhibition-wrapper {
 	background-color: #C91E90;
 	background-image: linear-gradient(to right, #C91E90, #C91E90, #C91E90, #000);
 }
-#exhibitions #robotics .exhibition-wrapper {
+#robotics .exhibition-wrapper {
 	background-color: #A19892;
 	background-image: linear-gradient(to right, #A19892, #A19892, #A19892, #000);
 }
-#exhibitions #ecology .exhibition-wrapper {
+#ecology .exhibition-wrapper {
 	background-color: #678515;
 	background-image: linear-gradient(to right, #678515, #678515, #678515, #000);
 }
@@ -976,7 +976,12 @@ text-align: center;
 	
 }
 
+/* Hover states */
 
+#exhibitions article .exhibition-wrapper:hover {
+	background-image: none;
+	top: -5px;
+}
 
 /*DESKTOP STYLES
 ----------------------------------------*/
@@ -996,6 +1001,14 @@ text-align: center;
 ----------------------------------------*/
 @media screen and (max-width: 480px) {
 
+#page-heading {
+	background-position-x: -300px;
+}
+#page-heading h1 {
+	margin-top: 100px;
+	font-size: 2.5em;
+}
+
 .texture {
 	background-image: url("../images/texture_400.jpg");
 }
@@ -1003,6 +1016,7 @@ text-align: center;
 .flexbox {
 	flex-direction: column;
 }
+
 
 /* Arrow sections */
 
@@ -1150,8 +1164,43 @@ text-align: center;
 	border-right: 20px solid transparent;
 }
 
+/* FOOTER 
+-----------------------------------*/
+#page-footer {
+	max-width: 400px;
+	margin: 0 auto;
+}
+
+#page-footer .container-arrow-section {
+	background-position: -300px -40px;
+	border-color: #A19892;
+	border-color: rgba(161, 152, 146, 0.96);
+}
+#social-links ul {
+	margin-top: 30px;
+}
+#social-links li div {
+	width: 70px;
+	height: 60px;
+}
+#copyright {
+	position: relative;
+	top: 80px;
+}
+#copyright p {
+	display: block;
+}
+#page-footer-right {
+	display: none;
+}
+
+/* ---------------------------
+PAGES mobile
+-----------------------------
+ */
 /*--------------------------
- CTA AREA mobile 
+HOME PAGE
+	CTA AREA mobile 
  ----------------------------*/
 
  #hero-img {
@@ -1287,34 +1336,50 @@ text-align: center;
 }
 
 
-/* FOOTER 
------------------------------------*/
-#page-footer {
-	max-width: 400px;
+/* -------------------------------
+EXHIBITIONS mobile
+----------------------------- */
+#exhibitions > * {
+	width: 375px;
+}
+#exhibitions > article {
+	max-width: 480px;
 	margin: 0 auto;
 }
-
-#page-footer .container-arrow-section {
-	background-position: -300px -40px;
-	border-color: #A19892;
-	border-color: rgba(161, 152, 146, 0.96);
+.exhibition-heading {
+	flex-direction: row;
+	height: 100px;
+	border-left: 100px solid #000;
 }
-#social-links ul {
-	margin-top: 30px;
+.exhibition-heading h2 {
+	left: 100px;
+	top: -220px;
+	font-size: 1.5em;
 }
-#social-links li div {
-	width: 70px;
-	height: 60px;
+#exhibitions .diamond-icon {
+	height: 200px;
+	left: -100px;
 }
-#copyright {
+#exhibitions blockquote {
 	position: relative;
-	top: 80px;
+	left: 60px;
 }
-#copyright p {
-	display: block;
+#exhibitions article .exhibition-wrapper {
+	background-image: none;
+	left: 0;
 }
-#page-footer-right {
-	display: none;
+
+.exhibition-info {
+	margin: 0 auto;
+	max-width: 90%;
 }
-	
+
+#exhibitions #biology h2 {
+	width: 150px;
+}
+#exhibitions #biology blockquote {
+	letter-spacing: .1em;
+}
+
+
 }
