@@ -81,6 +81,14 @@ p {
 	/*border: 1px dashed red;*/
 }
 
+blockquote {
+	text-align: center;
+	font-size: 1.5em;
+	font-style: italic;
+	letter-spacing: .2em;
+	text-shadow: 5px 5px 15px rgba(0, 0, 0, .9);
+}
+
 h2 {
 	text-align: center;
 	margin: 5px 0;
@@ -123,6 +131,15 @@ footer ul {
 	background-repeat: no-repeat;
 	position: relative;
 	width: 355px;	
+}
+
+.header-image {
+	background-position: center;
+	background-repeat: no-repeat;
+	max-width: 650px;
+	height: 150px;
+	border-radius: 5px;
+	box-shadow: 5px 5px 20px rgba(0, 0, 0, .5);
 }
 
 .flexbox {
@@ -848,28 +865,118 @@ text-align: center;
 /*------------------
  EXHIBITIONS 
  -------------------*/
- #exhibitions > * {
+#exhibitions > * {
 	 width: 100%;
- }
+}
+#exhibitions article {
+	height: auto;
+}
+#exhibitions p {
+	font-size: 1.3em;
+}
 
-#exhibitions #cosmology .diamond-icon {
-	background: url("../images/icons/diamond_cosmology_200.png") top left / contain no-repeat;
+#exhibitions .exhibition-wrapper {
+	max-width: 1100px;
+	position: relative;
+	left: 100px;
+}
+
+#exhibitions .diamond-icon {
 	width: 200px;
-	height: 100%;
+	height: 200px;
 	position: relative;
 	left: -100px;
-	/* border: 1px dotted yellow; */
+}
+
+.exhibition-heading {
+	background-color: #000;
+	background-color: rgba(0, 0, 0, 0.3);
+	max-width: 100%;
+	height: 100px;
+}
+.exhibition-heading h2 {
+	display: inline-block;
+	position: relative;
+	left: -100px;
+	height: 40px;
+	margin-top: 50px;
+	text-shadow: 5px 5px 15px rgba(0, 0, 0, .9);
+	text-transform: uppercase;
+	letter-spacing: .1em;
+}
+.exhibition-info {
+	color: #FFFEEC;
+	margin-left: 100px;
+	padding: 5px 0 20px 5px;
+	max-width: 65%;
+}
+
+/* Specific exhibition sections */
+
+#exhibitions #evolution p {
+	color: #000;
+}
+
+/* Section wrappers */
+#exhibitions #cosmology .exhibition-wrapper {
+	background-color: #166187;
+	background-image: linear-gradient(to right, #166187, #166187, #166187, #000);
+}
+#exhibitions #evolution .exhibition-wrapper {
+	background-color: #E3C91E;
+	background-image: linear-gradient(to right, #E3C91E, #E3C91E, #E3C91E, #000);
+}
+#exhibitions #biology .exhibition-wrapper {
+	background-color: #C91E90;
+	background-image: linear-gradient(to right, #C91E90, #C91E90, #C91E90, #000);
+}
+#exhibitions #robotics .exhibition-wrapper {
+	background-color: #A19892;
+	background-image: linear-gradient(to right, #A19892, #A19892, #A19892, #000);
+}
+#exhibitions #ecology .exhibition-wrapper {
+	background-color: #678515;
+	background-image: linear-gradient(to right, #678515, #678515, #678515, #000);
+}
+/* Diamond icons */
+#exhibitions #cosmology .diamond-icon {
+	background: url("../images/icons/diamond_cosmology_200.png") top left / contain no-repeat;
+}
+#exhibitions #evolution .diamond-icon {
+	background: url("../images/icons/diamond_evolution_200.png") top left / contain no-repeat;
+}
+#exhibitions #biology .diamond-icon {
+	background: url("../images/icons/diamond_biology_200.png") top left / contain no-repeat;
+}
+#exhibitions #robotics .diamond-icon {
+	background: url("../images/icons/diamond_robotics_200.png") top left / contain no-repeat;
+}
+#exhibitions #ecology .diamond-icon {
+	background: url("../images/icons/diamond_ecology_200.png") top left / contain no-repeat;
+}
+/* Header images */
+#cosmology .header-image {
+	background-image: url("../images/header-cosmology.jpg");
+	
+}
+#evolution .header-image {
+	background-image: url("../images/header-evolution.jpg");
+	
+}
+#biology .header-image {
+	background-image: url("../images/header-biology.jpg");
+	
+}
+#robotics .header-image {
+	background-image: url("../images/header-robotics.jpg");
+	
+}
+#ecology .header-image {
+	background-image: url("../images/header-ecology.jpg");
 	
 }
 
-#exhibitions #cosmology > div:first-child {
-	background-color: #A19892;
-	width: 100%;
-	height: 500px;
-	position: relative;
-	left: 100px;
 
-}
 
 /*DESKTOP STYLES
 ----------------------------------------*/
