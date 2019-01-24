@@ -73,7 +73,7 @@
 	</div>
 	<div id="page-container">
 		<!-- MAIN CONTENT -------------------------------------->
-		<main id="exhibitions" role="main">
+		<main id="visit-us" role="main">
 			<header id="page-heading" class="container-arrow-section flexbox texture" role="banner">
 				<div class="main-arrow-section">
 					<h1>Visit us</h1>
@@ -83,6 +83,85 @@
 					<div class="bottom-right-arrow-section"></div>
 				</div>
 			</header>
+			<!-- Location -->
+			<article id="location" role="article">
+				<div class="section-wrapper flexbox nowrap column">
+					<div class="section-heading">
+						<h2>Where and when?</h2>
+					</div>
+					<div class="section-content flexbox">
+						<div class="flexbox column">
+							<section class="contact-info">
+								<h3>Address</h3>
+								<p>Community Science Museum Haugesund,<br>Haraldsgata 100,<br>5500 Haugesund</p>
+								<p>E-mail: haugesund@csm.no<br>Phone: &plus;47 52 70 00 00</p>
+							</section>
+							<hr>
+							<section id="opening-hours">
+								<h3>Opening&nbsp;hours</h3>
+								<table>
+									<tr>
+										<th>Tuesday - Thursday: </th>
+										<td>10:00 - 16:00</td>
+									</tr>
+									<tr>
+										<th>Friday: </th>
+										<td>10:00 - 19:00</td>
+									</tr>
+									<tr>
+										<th>Saturday: </th>
+										<td>09:00 - 16:00</td>
+									</tr>
+									<tr>
+										<th>Sunday: </th>
+										<td>09:00 - 13:00</td>
+									</tr>
+								</table>
+							</section>
+						</div>
+						<div id="location-map"></div>
+						<!-- LOCATION MAP -->
+						<script>
+							function initMap() {
+							  var csMuseum = {lat: 59.4120439, lng: 5.2687456};
+							  var map = new google.maps.Map(
+							      document.getElementById('location-map'), {zoom: 15, center: csMuseum});
+							  var marker = new google.maps.Marker({position: csMuseum, map: map});
+							}
+					    </script>
+					    <script async defer
+					    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCyLHzdOOC-1ZL1wf35bKcwmx0DxgjSt8I&callback=initMap">
+					    </script>
+					</div>
+				</div>
+			</article>
+			<!-- Facilities -->
+			<article id="facilities" role="article">
+				<div class="section-wrapper flexbox nowrap column">
+					<div class="section-heading">
+						<h2>Facilities</h2>
+					</div>
+					<div class="section-content flexbox">
+						<section>
+							<h3>Accessibility</h3>
+							<p>The museum has wheelchair accessibility ramps. It also has audio guides and braille display signs for the visually impaired.</p>
+
+						</section>
+						<section>
+							<h3>Food and drink</h3>
+							<p>There is a café attached to the museum where you can get light lunches, soft drinks, coffee, snacks and more.</p>
+
+						</section>
+						<section>
+							<h3>Shop</h3>
+							<p>Our shop offers a range of memorabilia from the museum as well as great gifts and activity packs that allow you to continue to explore science even after you’ve left the museum.</p>
+						</section>
+					</div>
+				</div>
+			</article>
+			
+		</main>
+	</div>
 
 
 
@@ -119,7 +198,7 @@
 							</li>
 						</ul>
 					</section>
-					<section id="contact-info">
+					<section class="contact-info">
 						<p>Community Science Museum Haugesund,<br>Haraldsgata 100,<br>5500 Haugesund</p>
 						<p>E-mail: haugesund@csm.no<br>Phone: &plus;47 52 70 00 00</p>
 					</section>

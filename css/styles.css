@@ -30,9 +30,8 @@ Green		#678515		rgb(103, 133, 21)
 /*
 TO DO:
 
+- Visit us > Facilities > Bacground images??
 - Media query for 320px??
-- Texture for mobile
-- Hero img for mobile
 
 */
 
@@ -86,10 +85,12 @@ h2 {
 	text-shadow: 5px 5px 15px rgba(0, 0, 0, .9);
 	text-transform: uppercase;
 	letter-spacing: .1em;
+	margin: 30px auto;
 }
 
 h3 {
 	font-size: 1.4em;
+	text-align: center;
 }
 
 footer p {
@@ -101,6 +102,10 @@ a {
 	color: #FFFEEC;
 	/*display: block;*/
 	/*border: 1px dotted yellow;*/
+}
+hr {
+	width: 80%;
+	size: .5px;
 }
 
 /* Structure */
@@ -133,6 +138,7 @@ a {
 .section-content {
 	color: #FFFEEC;
 	padding: 5px 0 20px 5px;
+	margin: 0 40px;
 }
 
 header ul,
@@ -603,7 +609,7 @@ footer li a:hover {
 	background-image: url("../images/icons/social_twitter_active.png");	
 }
 
-#contact-info {
+.contact-info {
 	display: inline-block;
 	margin: 0 auto;
 	width: 200px;
@@ -743,7 +749,6 @@ text-align: center;
 }
 
  .news-article h3 {
-	 text-align: center;
 	 margin: 10px 0;
 	 color: #166187;
 	 /* border: 1px dotted green; */
@@ -918,6 +923,7 @@ text-align: center;
 	height: 100px;
 }
 #exhibitions .section-heading h2 {
+	margin: 0;
 	display: inline-block;
 	position: relative;
 	left: -100px;
@@ -1000,6 +1006,72 @@ text-align: center;
 	background-image: none;
 	top: -5px;
 }
+
+/*--------------------
+ VISIT US
+ ---------------------*/
+#visit-us > * {
+	width: 100%;
+}
+#visit-us article {
+	height: auto;
+}
+#visit-us .section-wrapper {
+	margin: 0 auto;
+}
+#location .section-wrapper {
+	background-color: #166187;
+}
+#location .section-content > * {
+	margin-top: 20px;
+}
+#location .section-content > div:first-child {
+	margin: 0 auto;
+}
+#visit-us #opening-hours h3 {
+	margin-bottom: 10px;
+}
+#visit-us #opening-hours table {
+	width: auto;
+	margin: 0 auto;
+}
+#visit-us #opening-hours table tr {
+	position: static;
+	width: 100%;
+}
+#visit-us #opening-hours table th {
+	width: 150px;
+	text-align: left;
+}
+#location-map {
+	margin: 0 auto;
+	width: 60%;
+	height: 400px;
+}
+
+#facilities .section-wrapper {
+	background-color: #166187;
+}
+#facilities .section-content {
+	color: #000;
+}
+#facilities section {
+	font-size: 1.2em;
+	color: #FFFEEC;
+	padding: 0 10px;
+	flex: 1;
+}
+#facilities section:first-child {
+	background-color: #E3C91E;
+	color: #000;
+}
+#facilities section:nth-child(2) {
+	background-color: #C91E90;
+}
+#facilities section:last-child {
+	background-color: #678515;
+}
+
 
 /*DESKTOP STYLES
 ----------------------------------------*/
