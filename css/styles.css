@@ -1045,6 +1045,39 @@ text-align: center;
 	height: 400px;
 }
 
+/* Admission */
+#admission .section-wrapper {
+	background-color:#166187;
+}
+#admission section {
+	flex: 1;
+	margin-top: 10px;
+	margin-right: 5em;
+	padding: 0 10px;
+	background-color: #FFFEEC;
+	color: #000;
+	/* border: 1px dotted white; */
+}
+#admission section:first-child {
+	background-color: #E3C91E;
+}
+#admission section:last-child {
+	margin-right: 0;
+}
+#admission section h3 {
+	letter-spacing: .1em;
+	text-transform: uppercase;
+	text-shadow: 5px 5px 15px rgba(0, 0, 0, .3);
+}
+#admission section p {
+	font-size: 1.2em;
+	text-align: center;
+}
+#admission section span {
+	font-style: italic;
+	color: #166187;
+}
+
 /* Facilities */
 
 /* small changes to arrow section */
@@ -1069,7 +1102,7 @@ text-align: center;
 	background-color: #678515;
 	color: #FFFEEC;
 	padding: 0 10px;
-	height: 300px;
+	height: auto;
 	border-right: 1px solid #000;
 	flex: 1;
 }
@@ -1082,6 +1115,12 @@ text-align: center;
 
 
 /* hover states */
+#admission section:hover {
+	box-shadow: 5px 5px 20px rgba(0, 0, 0, .5);
+	position: relative;
+	left: -1px;
+	top: -1px;
+}
 #facilities section:hover {
 	flex: 1.5;
 	margin-top: -5px;
@@ -1511,6 +1550,9 @@ EXHIBITIONS mobile
 /*------------------------
  VISIT US mobile 
  -----------------------*/
+#visit-us > .container-arrow-section {
+	width: 375px;
+}
  
 #visit-us .main-arrow-section {
    order: 1;
@@ -1518,8 +1560,34 @@ EXHIBITIONS mobile
 #visit-us .tip-arrow-section {
    order: 2;
 }
+/* Admission */
+#admission section,
+#admission section:last-child {
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+}
 
+/* Location */
+#location .section-content {
+	width: 100%;
+}
+#location-map {
+	width: 100%;
+	margin-bottom: 50px;
+}
 
+/* Facilities */
+#facilities .tip-arrow-section {
+	margin: 0 auto;
+}
+#facilities .tip-arrow-section::after {
+	border-left-color: #166187;
+	border-right-color: #166187;
+}
+#facilities section {
+	height: auto;
+}
 
 }
 
