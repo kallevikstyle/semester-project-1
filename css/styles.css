@@ -89,7 +89,7 @@ h3 {
 	text-align: center;
 }
 
-footer p {
+#page-footer section p {
 	font-size: 12px;
 	margin-top: 0;
 }
@@ -1108,6 +1108,7 @@ text-align: center;
 }
 #facilities section h3 {
 	margin-top: 5px;
+	letter-spacing: .1em;
 }
 #facilities section p {
 	margin-top: -10px;
@@ -1122,7 +1123,6 @@ text-align: center;
 	top: -1px;
 }
 #facilities section:hover {
-	flex: 1.5;
 	margin-top: -5px;
 }
 #facilities section:first-child:hover {
@@ -1134,6 +1134,26 @@ text-align: center;
 }
 #facilities section:last-child:hover {
 	background-color: #166187;
+}
+
+/* ----------------
+GET INVOLVED
+-------------------- */
+#get-involved > * {
+	width: 100%;
+}
+#get-involved > article {
+	height: auto;
+}
+#get-involved p {
+	font-size: 1.2em;
+	max-width: 85%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#get-involved .section-wrapper {
+	background-color: #678515;
 }
 
 
@@ -1587,6 +1607,16 @@ EXHIBITIONS mobile
 }
 #facilities section {
 	height: auto;
+}
+
+/* -----------
+GET INVOLVED mobile
+-------------- */
+#get-involved > * {
+	width: 375px;
+}
+#get-involved article {
+	margin: 0 auto;
 }
 
 }
