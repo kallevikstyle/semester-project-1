@@ -1045,27 +1045,56 @@ text-align: center;
 	height: 400px;
 }
 
+/* Facilities */
+
+/* small changes to arrow section */
+#facilities .container-arrow-section {
+	background-color: #000;
+	border-color: #000;
+	width: 100%;
+}
+#facilities .top-left-arrow-section,
+#facilities .bottom-left-arrow-section {
+	border-left-color: #166187;
+}
+
 #facilities .section-wrapper {
 	background-color: #166187;
 }
 #facilities .section-content {
-	color: #000;
+	margin-top: 20px;
 }
 #facilities section {
 	font-size: 1.2em;
+	background-color: #678515;
 	color: #FFFEEC;
 	padding: 0 10px;
+	height: 300px;
+	border-right: 1px solid #000;
 	flex: 1;
 }
-#facilities section:first-child {
+#facilities section h3 {
+	margin-top: 5px;
+}
+#facilities section p {
+	margin-top: -10px;
+}
+
+
+/* hover states */
+#facilities section:hover {
+	flex: 1.5;
+	margin-top: -5px;
+}
+#facilities section:first-child:hover {
 	background-color: #E3C91E;
 	color: #000;
 }
-#facilities section:nth-child(2) {
+#facilities section:nth-child(2):hover {
 	background-color: #C91E90;
 }
-#facilities section:last-child {
-	background-color: #678515;
+#facilities section:last-child:hover {
+	background-color: #166187;
 }
 
 
@@ -1479,5 +1508,19 @@ EXHIBITIONS mobile
 	font-size: 1.2em;
 }
 
+/*------------------------
+ VISIT US mobile 
+ -----------------------*/
+ 
+#visit-us .main-arrow-section {
+   order: 1;
+}
+#visit-us .tip-arrow-section {
+   order: 2;
+}
+
+
 
 }
+
+
