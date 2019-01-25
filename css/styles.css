@@ -1146,6 +1146,10 @@ GET INVOLVED
 #get-involved > article {
 	height: auto;
 }
+#get-involved .section-wrapper {
+	background-color: #678515;
+	margin: 0 auto;
+}
 #get-involved p {
 	font-size: 1.2em;
 	max-width: 85%;
@@ -1153,10 +1157,43 @@ GET INVOLVED
 	margin-right: auto;
 }
 
-#get-involved .section-wrapper {
-	background-color: #678515;
+
+
+/* ----------------
+EXPLORE
+-------------------- */
+#explore > * {
+	width: 100%;
+}
+#explore > article {
+	height: auto;
+}
+#explore .section-wrapper {
+	background-color: #166187;
 	margin: 0 auto;
 }
+#explore .section-content div {
+	/* border: 1px dotted yellow; */
+	margin: 0 auto;
+}
+#explore .section-content div:first-child {
+	max-width: 50%;
+}
+#explore p {
+	font-size: 1.4em;
+	max-width: 85%;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+#explore img {
+	margin: 20px auto;
+	max-width: 100%;
+	border-radius: 5px;
+	box-shadow: 5px 5px 20px rgba(0, 0, 0, .5);
+	
+}
+
 
 
 /*DESKTOP STYLES
@@ -1621,6 +1658,18 @@ GET INVOLVED mobile
 	margin: 0 auto;
 }
 
+/* -----------
+EXPLORE mobile
+-------------- */
+#explore > * {
+	width: 375px;
+}
+#explore article {
+	margin: 0 auto;
+}
+#explore .section-content div:first-child {
+	max-width: 100%;
+}
 }
 
 
