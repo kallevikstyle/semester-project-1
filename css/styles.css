@@ -821,6 +821,7 @@ text-align: center;
 }
 #info-blurb .text-background {
 	width: 94%;
+	height: 250px;
 	padding: 10px;
 	margin-left: auto;
 	margin-right: auto;
@@ -828,7 +829,7 @@ text-align: center;
 }
 
 #info-blurb p {
-	font-size: 1.2em;
+	font-size: 1.1em;
 	/*border: 1px dotted red;*/
 }
 #info-blurb p:first-child {
@@ -1154,6 +1155,7 @@ GET INVOLVED
 
 #get-involved .section-wrapper {
 	background-color: #678515;
+	margin: 0 auto;
 }
 
 
