@@ -58,9 +58,6 @@ body {
 	letter-spacing: .3em;
 }
 
-p {
-	/*border: 1px dashed red;*/
-}
 
 blockquote {
 	text-align: center;
@@ -265,7 +262,7 @@ form input[type="email"] {
 /* FONT DECLARATIONS 
 -------------------------------*/
 
-body {
+body, p, .news-article a {
 	font-family: "raleway-regular", helvetica, sans-serif;
 }
 
@@ -820,6 +817,9 @@ text-align: center;
 	width: 35%;
 	height: 280px;
 	font-size: 12px;
+}
+.news-article a {
+	color: #000;
 }
 
 .news-article:first-child {
@@ -1628,8 +1628,14 @@ HOME PAGE
 	 flex-wrap: nowrap;
  }
  #eye-button {
+	 width: 100px;
+	 height: 100px;
 	 top: 200px;
-	 left: 30%;
+	 left: 38%;
+ }
+ #eye-button div {
+	 width: 100px;
+	 height: 100px;
  }
  #circular-buttons > *,
  #circular-buttons .circular-btn div {
@@ -1646,7 +1652,7 @@ HOME PAGE
 --------------------------------------*/
 .news-article {
 	width: 80%;
-	
+	padding-bottom: 10px;
 }
 .news-article:first-child {
 	margin: 20px auto;
@@ -1748,7 +1754,7 @@ HOME PAGE
 
 #newsletter form input[type="text"],
 #newsletter form input[type="email"] {
-	width: 100%;
+	width: 90%;
 	padding: 5px 10px;
 	float: none;
 }
