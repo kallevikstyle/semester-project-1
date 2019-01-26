@@ -827,9 +827,9 @@ text-align: center;
 }
 
 #more-news {
-	position: absolute;
-	right: -100px;
-	top: 115px;
+	position: relative;
+	left: 100%;
+	top: -47%;
 	height: 20px;
 	padding: 5px;
 }
@@ -1659,9 +1659,8 @@ HOME PAGE
 }
 #more-news {
 	margin: 0 auto;
-	position: relative;
 	top: 80px;
-	right: 0;
+	left: 39%;
 }
 #latest-news .tip-arrow-section {
 	background-image: url("../images/vr-guy_grey_375.jpg");
