@@ -1074,23 +1074,18 @@ text-align: center;
 /* Header images */
 #cosmology .header-image {
 	background-image: url("../images/header-cosmology.jpg");
-	
 }
 #evolution .header-image {
 	background-image: url("../images/header-evolution.jpg");
-	
 }
 #biology .header-image {
 	background-image: url("../images/header-biology.jpg");
-	
 }
 #robotics .header-image {
 	background-image: url("../images/header-robotics.jpg");
-	
 }
 #ecology .header-image {
 	background-image: url("../images/header-ecology.jpg");
-	
 }
 
 /* Hover states */
@@ -1794,9 +1789,6 @@ EXHIBITIONS mobile
 	height: 200px;
 	left: -100px;
 }
-#exhibitions blockquote {
-	
-}
 #exhibitions article .section-wrapper {
 	background-image: none;
 	left: 0;
@@ -1813,6 +1805,22 @@ EXHIBITIONS mobile
 	left: 20px;
 	letter-spacing: .1em;
 	font-size: 1.2em;
+}
+/* Header images */
+#cosmology .header-image {
+	background-image: url("../images/header-cosmology-250.jpg");
+}
+#evolution .header-image {
+	background-image: url("../images/header-evolution-250.jpg");
+}
+#biology .header-image {
+	background-image: url("../images/header-biology-250.jpg");
+}
+#robotics .header-image {
+	background-image: url("../images/header-robotics-250.jpg");
+}
+#ecology .header-image {
+	background-image: url("../images/header-ecology-250.jpg");
 }
 
 /*------------------------
