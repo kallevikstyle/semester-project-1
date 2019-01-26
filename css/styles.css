@@ -1307,7 +1307,7 @@ GLOBAL
 /* Arrow sections */
 
 .container-arrow-section {
-	/*overflow: hidden;*/
+	overflow: hidden;
 	flex-wrap: nowrap;
 	width: 375px;
 	margin: 0 auto;
