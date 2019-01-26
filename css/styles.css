@@ -1307,7 +1307,7 @@ GLOBAL
 /* Arrow sections */
 
 .container-arrow-section {
-	overflow: hidden;
+	/*overflow: hidden;*/
 	flex-wrap: nowrap;
 	width: 375px;
 	margin: 0 auto;
@@ -1315,7 +1315,7 @@ GLOBAL
 
 .main-arrow-section {
 	width: 100%;
-	height: 100%;
+	height: auto;
 }
 
 .tip-arrow-section::after {
@@ -1453,7 +1453,7 @@ GLOBAL
 /* FOOTER 
 -----------------------------------*/
 #page-footer {
-	max-width: 400px;
+	max-width: 375px;
 	margin: 0 auto;
 }
 
