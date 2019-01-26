@@ -1349,6 +1349,37 @@ ABOUT US
 	padding-bottom: 40px;
  }
 
+ /*--------------
+  NEWS 
+  ------------------*/
+
+#news > * {
+	width: 100%;
+}
+#news .section-wrapper {
+	margin: 0 auto;
+}
+#news-overview {
+	height: auto;
+}
+#news-overview .section-content > div {
+	flex: 1;
+	margin: 5px;
+	
+}
+#news-overview .news-article {
+	width: 300px;
+	height: 280px;
+	margin: 0 auto;
+	/* margin: 5px; */
+	padding-bottom: 5px;
+	color: #000;
+}
+
+#news-overview .section-wrapper {
+	background-color: #166187;
+}
+
 
 /*DESKTOP STYLES
 ----------------------------------------*/
@@ -1428,7 +1459,6 @@ GLOBAL
 .bottom-left-arrow-section,
 .top-left-arrow-section {
 	display: none;
-	/*border: 1px dotted red;*/
 }
 .container-arrow-section + * {
 	width: 100%;
@@ -1860,6 +1890,14 @@ ABOUT US mobile
 #about-us #museum-info .header-image {
 	background-image: url('../images/museum-building-375.jpg');
 	height: 188px;
+}
+
+/* NEWS mobile */
+#news > * {
+	width: 375px;
+}
+#news section {
+	margin: 0 auto;
 }
 
 }
