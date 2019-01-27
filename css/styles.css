@@ -1385,9 +1385,395 @@ ABOUT US
 /*TABLET STYLES
 ----------------------------------------*/
 @media screen and (min-width: 481px) and (max-width: 800px) {
-	body {
-		border: 4px solid orange;
-	}
+	
+	/* GLOBAL */
+
+#page-heading {
+	background-position-x: -300px;
+}
+
+#page-heading h1 {
+	margin-top: 100px;
+	font-size: 2.5em;
+}
+
+/* Structure elements */
+.section-heading h2 {
+	font-size: 1.5em;
+}
+.section-content {
+	margin: 0 auto;
+	max-width: 90%;
+}
+
+.texture {
+	background-image: url("../images/texture_600.jpg");
+}
+
+.flexbox {
+	flex-direction: column;
+}
+
+/* Arrow sections */
+
+.container-arrow-section {
+	overflow: hidden;
+	flex-wrap: nowrap;
+	width: 600px;
+	margin: 0 auto;
+}
+
+.main-arrow-section {
+	width: 100%;
+	height: auto;
+}
+
+.tip-arrow-section::after {
+	content: "";
+	width: 0;
+	height: 0;
+	border-left: 300px solid #000;
+	border-right: 300px solid #000;
+	border-style: solid;
+	border-top-width: 300px;
+	border-top-color: inherit;
+}
+
+.top-right-arrow-section,
+.bottom-right-arrow-section,
+.bottom-left-arrow-section,
+.top-left-arrow-section {
+	display: none;
+}
+.container-arrow-section + * {
+	width: 100%;
+	height: auto;
+}
+
+/* FOOTER
+------------------ */
+#copyright {
+	position: relative;
+	top: 150px;
+}
+#copyright p {
+	display: block;
+}
+#page-footer-right {
+	display: none;
+}
+
+/* ---------------------------
+PAGES tablet
+-----------------------------
+ */
+/*--------------------------
+HOME PAGE
+	CTA AREA tablet 
+ ----------------------------*/
+/* CTA buttons */
+#circular-buttons {
+	width: 95%;
+	top: 0;
+	left: 0;
+	flex-direction: row;
+	flex-wrap: nowrap;
+}
+#eye-button {
+	width: 120px;
+	height: 120px;
+	top: 200px;
+	left: 40%;
+}
+#eye-button div {
+	width: 120px;
+	height: 120px;
+}
+#circular-buttons > *,
+#circular-buttons .circular-btn div {
+	width: 100px;
+	height: 100px;
+}
+
+#slogan {
+	left: 33%;
+}
+/* News section tablet 
+--------------------------------------*/
+.news-article {
+	width: 300px;
+	padding-bottom: 10px;
+}
+.news-article:first-child {
+	margin: 20px auto;
+}
+#more-news {
+	margin: 0 auto;
+	font-size: 1.5em;
+	top: 100px;
+	left: 39%;
+}
+#latest-news .tip-arrow-section {
+	background-image: url("../images/vr-guy-600.jpg");
+	background-repeat: no-repeat;
+}
+#latest-news .tip-arrow-section::after {
+	border-left-color: transparent;
+	border-right-color: transparent;
+}
+/* Opening hours */
+#opening-hours h2 {
+	position: static;
+}
+#opening-hours table {
+	font-size: 1.2em;
+	 width: auto;
+	 margin: 0 auto;
+}
+#opening-hours table tr {
+	 position: static;
+}
+#opening-hours table th {
+	 text-align: left;
+}
+
+ /* Info blurb section */
+ #opening-hours + .img-trapezoid {
+	display: none;
+ }
+ #info-blurb {
+	 order: 1;
+ }
+#info-blurb + * {
+	order: 2;
+}
+#info-blurb .main-arrow-section {
+	order: 1;
+}
+#info-blurb .tip-arrow-section {
+	order: 2;
+}
+#info-blurb .main-arrow-section::before {
+	content: "";
+	display: none;
+}
+#info-blurb .text-background {
+	width: 85%;
+}
+#info-blurb p {
+	font-size: 1.4em;
+}
+#info-blurb img {
+	max-width: 320px;
+	margin: 10px;
+	border-width: 4px;
+}
+#info-blurb .tip-arrow-section {
+	background-image: url("../images/math-girl-600.jpg");
+	background-repeat: no-repeat;
+}
+#info-blurb .tip-arrow-section::after {
+	border-left-color: transparent;
+	border-right-color: transparent;
+}
+/* Newsletter section */
+#newsletter {
+	position: static;
+	height: auto;
+}
+#newsletter header {
+	width: 70%;
+	margin: 0 auto;
+}
+
+#newsletter + div {
+	display: none;
+}
+#newsletter h2 {
+	margin: 10px 0 0 0;
+}
+#newsletter p {
+	font-size: 1.6em;
+	width: 100%;
+	text-align: center;
+}
+#newsletter form {
+	font-size: 16px;
+	width: 70%;
+	margin: 15px auto;
+}
+
+#newsletter form input[type="text"],
+#newsletter form input[type="email"] {
+	width: 60%;
+	padding: 5px 10px;
+	float: none;
+}
+
+#newsletter form label {
+	display: block;
+	float: none;
+	text-align: left;
+	width: 50%;
+}
+#newsletter input[type="submit"] {
+	position: static;
+	display: block;
+	width: 30%;
+	margin: 10px 0;
+}
+
+
+/* -------------------------------
+EXHIBITIONS tablet
+----------------------------- */
+#exhibitions > * {
+	width: 600px;
+}
+#exhibitions > article {
+	max-width: 800px;
+	margin: 0 auto;
+}
+#exhibitions .section-heading {
+	flex-direction: row;
+	height: 100px;
+	border-left: 100px solid #000;
+}
+#exhibitions .section-heading h2 {
+	font-size: 1.8em;
+	left: -100px;
+	top: -20px;
+}
+#exhibitions .diamond-icon {
+	height: 200px;
+	left: -100px;
+}
+#exhibitions article .section-wrapper {
+	background-image: none;
+	left: 0;
+}
+#exhibitions article .section-content {
+	margin-top: 20px;
+}
+
+#exhibitions #biology h2 {
+	width: 150px;
+}
+#exhibitions blockquote {
+	position: relative;
+	left: 20px;
+	letter-spacing: .2em;
+	font-size: 1.4em;
+}
+/* Header images */
+#cosmology .header-image {
+	background-image: url("../images/header-cosmology.jpg");
+}
+#evolution .header-image {
+	background-image: url("../images/header-evolution.jpg");
+}
+#biology .header-image {
+	background-image: url("../images/header-biology.jpg");
+}
+#robotics .header-image {
+	background-image: url("../images/header-robotics.jpg");
+}
+#ecology .header-image {
+	background-image: url("../images/header-ecology.jpg");
+}
+
+/*------------------------
+ VISIT US tablet 
+ -----------------------*/
+ #visit-us > .container-arrow-section {
+	width: 600px;
+}
+ 
+#visit-us .main-arrow-section {
+   order: 1;
+}
+#visit-us .tip-arrow-section {
+   order: 2;
+}
+/* Admission */
+#admission section,
+#admission section:last-child {
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* Location */
+#location .section-content {
+	width: 100%;
+}
+#location-map {
+	width: 100%;
+	margin-bottom: 50px;
+}
+
+/* Facilities */
+#facilities .tip-arrow-section {
+	margin: 0 auto;
+}
+#facilities .tip-arrow-section::after {
+	border-left-color: #166187;
+	border-right-color: #166187;
+}
+#facilities section {
+	height: auto;
+	width: 70%;
+	margin: 0 auto;
+}
+
+/* -----------
+GET INVOLVED tablet
+-------------- */
+#get-involved > * {
+	width: 600px;
+}
+#get-involved article {
+	margin: 0 auto;
+}
+
+/* -----------
+EXPLORE mobile
+-------------- */
+#explore > * {
+	width: 600px;
+}
+#explore article {
+	margin: 0 auto;
+}
+#explore .section-content div:first-child {
+	max-width: 100%;
+}
+
+/* -----------
+ABOUT US mobile
+-------------- */
+#about-us > * {
+	width: 600px;
+}
+#about-us article {
+	margin: 0 auto;
+}
+#about-us blockquote {
+	padding: 0;
+}
+#about-us #museum-info .header-image {
+	background-image: url('../images/museum-building-600.jpg');
+	height: 300px;
+}
+
+/* NEWS mobile */
+#news > * {
+	width: 600px;
+}
+#news section {
+	margin: 0 auto;
+}
+
 }
 
 /*MOBILE STYLES
@@ -1638,8 +2024,6 @@ HOME PAGE
 	 height: 60px;
  }
  
-
-
  #slogan {
 	 left: 24%;
  }
@@ -1784,6 +2168,9 @@ EXHIBITIONS mobile
 #exhibitions .section-heading h2 {
 	left: 100px;
 	top: -220px;
+}
+#exhibitions #robotics h2 {
+	left: 80px;
 }
 #exhibitions .diamond-icon {
 	height: 200px;
