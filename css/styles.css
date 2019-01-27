@@ -1386,7 +1386,7 @@ ABOUT US
 ----------------------------------------*/
 @media screen and (min-width: 481px) and (max-width: 800px) {
 	
-	/* GLOBAL */
+/* GLOBAL */
 
 #page-heading {
 	background-position-x: -300px;
@@ -1449,6 +1449,140 @@ ABOUT US
 	width: 100%;
 	height: auto;
 }
+
+/* HEADER AND NAV
+-----------------------------*/
+#container-page-header {
+	background-position: 200px;
+}
+
+#page-header {
+	height: 200px;
+	overflow: hidden;
+}
+#page-header #logo {
+	margin-top: 40px;
+	width: 200px;
+	background-position: top;
+
+}
+#page-header-right {
+	width: 0;
+}
+
+#page-header-right::before {
+	right: 0;
+	border-width: 200px;
+}
+
+/* Navigation */
+#page-header-right > a {
+	position: absolute;
+	z-index: 3;
+}
+
+#main-navigation {
+	top: 80px;
+	right: 75px;
+	font-size: 12px;
+}
+#main-navigation ul li {
+	width: 80px;
+}
+
+#right-hand-navigation {
+	position: relative;
+	left: -100px;
+	top: 70px;
+}
+#right-hand-navigation ul li {
+	display: inline-block;
+	/*margin-bottom: 20px;*/
+	width: 70px;
+	/*border: 1px dotted yellow;*/
+}
+#right-hand-navigation ul li:first-child {
+	margin-right: 0;
+}
+
+/* Buttons */
+.btn-border {	
+	height: 20px;
+}
+
+.btn-border::after {
+	top: -1px;
+	right: -22px;
+	border-top: 21px solid transparent;
+	border-right: 21px solid transparent;
+}
+
+.btn {
+	border: 1px solid transparent;
+  	padding-top: 1px;
+  	height: 18px;
+  }
+
+.btn::after {
+	top: -1px;
+	right: -20px;
+	border-top: 20px solid #166187;
+	border-right: 20px solid transparent;
+}
+
+#main-navigation ul li:first-child {
+	left: 80px;
+}
+#main-navigation ul li:nth-child(2) {
+	left: 54px;
+}
+#main-navigation ul li:nth-child(3) {
+	left: 28px;
+}
+
+/* Buttons active states */
+.btn-border:active {
+	border: 1px solid #FFFEEC;
+}
+.btn-border:active::after {
+	border-top-color: #FFFEEC;
+}
+.btn:active {
+	background-color: #FFFEEC;
+	color: #000;
+}
+.btn:active::after {
+	border-top-color: #FFFEEC;
+}
+
+#tours-btn:active {
+	background-color: #E3C91E;
+	color: #000;
+}
+#tours-btn:active::after {
+	border-bottom-color: #E3C91E;
+}
+
+
+.active {
+	border-bottom-width: 2px;
+	border-bottom-color: #E3C91E;
+}
+
+#tours-btn {
+	font-size: 12px;
+	top: 80px;
+	left: -150px;
+	padding: 3px 5px 5px 5px; 
+	width: 90px;
+	height: 12px;
+}
+#tours-btn::after {
+	right: -20px;
+	border-bottom: 20px solid #C91E90;
+	border-right: 20px solid transparent;
+}
+
 
 /* FOOTER
 ------------------ */
@@ -1531,10 +1665,13 @@ HOME PAGE
 	 margin: 0 auto;
 }
 #opening-hours table tr {
+	/* border: 1px dotted yellow; */
 	 position: static;
 }
 #opening-hours table th {
 	 text-align: left;
+	 width: 120px;
+	 /* border: 1px dotted red; */
 }
 
  /* Info blurb section */
@@ -1713,6 +1850,9 @@ EXHIBITIONS tablet
 }
 
 /* Facilities */
+#facilities .container-arrow-section {
+	width: 600px;
+}
 #facilities .tip-arrow-section {
 	margin: 0 auto;
 }
@@ -1737,7 +1877,7 @@ GET INVOLVED tablet
 }
 
 /* -----------
-EXPLORE mobile
+EXPLORE tablet
 -------------- */
 #explore > * {
 	width: 600px;
@@ -1745,12 +1885,17 @@ EXPLORE mobile
 #explore article {
 	margin: 0 auto;
 }
+#explore img {
+	width: 400px;
+	display: block;
+	margin: 0 auto;
+}
 #explore .section-content div:first-child {
 	max-width: 100%;
 }
 
 /* -----------
-ABOUT US mobile
+ABOUT US tablet
 -------------- */
 #about-us > * {
 	width: 600px;
@@ -1766,7 +1911,7 @@ ABOUT US mobile
 	height: 300px;
 }
 
-/* NEWS mobile */
+/* NEWS tablet */
 #news > * {
 	width: 600px;
 }
